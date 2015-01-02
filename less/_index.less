@@ -1,0 +1,96 @@
+.index_div {
+	.title_span {
+		border-left : 2px solid #215183;
+		text-indent : 5px;
+		display : block;
+		font-size : 16px;
+		color : #215183;
+		font-weight : bold;
+	}
+	.person_div {
+		margin-top : 10px;
+		hr {
+			margin-top : 10px;
+		}
+		.one_person_div {
+			margin-top : 10px;
+			border : 2px dashed #E8E8FF;
+			border-radius : 5px;
+			padding : 5px;
+			.person_name {
+				font-size : 16px;
+				font-weight : bold;
+			}
+			.person_info {
+				font-size : 14px;
+				margin-top : 5px;
+				text-indent : 25px;
+				line-height : 20px;
+				a {
+					text-decoration : none;
+					&:hover {
+						color : #EDAB1E;
+					}
+				}
+			}
+		}
+	}
+	.half_div {
+		margin-top : 10px;
+		width : 500px;
+		height : 350px;
+		float : left;
+		.inner_hald_div {
+			width : 495px;
+			margin : 0px;
+			hr {
+				margin-top : 10px;
+			}
+			ul {
+				li {
+					list-style-type : none;
+					margin-top : 10px;
+					margin-left : 10px;
+					cursor : pointer;
+					.note_title {
+						color : #6AC239;
+						font-size : 20px;
+					}
+					.note_sub_title {
+						color : #164A81;
+						text-indent : 40px;
+					}
+					&:hover {
+						.note_title {
+							color : #DA6D28;
+						}
+						.note_sub_title {
+							color : #DA6D28;
+						}
+					}
+				}
+			}
+			.half_button {
+				text-align : center;
+				margin-top : 10px;
+				margin-bottom : 10px;
+				a {
+					margin : 0px auto;
+					width : 100px;
+					height :30px;
+					display : block;
+					background-color : white;
+					border : 1px solid black;
+					border-radius : 10px;
+					outline : none;
+					text-decoration : none;
+					line-height : 30px;
+					color : black;
+					&:hover {
+						background-color : #B4B4B4;
+					}
+				}
+			}
+		}
+	}
+}

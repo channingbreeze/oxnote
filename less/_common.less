@@ -1,0 +1,135 @@
+* {
+	margin : 0px;
+	padding : 0px;
+}
+
+body {
+	overflow-y : scroll;
+}
+
+.menu_div {
+	height : 50px;
+	border-bottom : 1px solid #E8E8FF;
+	background-color : #670064;
+	.inner_menu_div {
+		width : 1000px;
+		height : 100%;
+		margin : 0px auto;
+		.menu_title {
+			font-size : 30px;
+			line-height : 50px;
+			float : left;
+			font-weight : bold;
+			color : white;
+		}
+		ul {
+			float : left;
+			margin-left : 100px;
+			li {
+				list-style-type : none;
+				width : 50px;
+				height : 50px;
+				float : left;
+				text-align : center;
+				a {
+					width : 50px;
+					height : 50px;
+					display : block;
+					line-height : 50px;
+					text-decoration : none;
+					color : #E8E8FF;
+					font-weight : bold;
+					&:hover {
+						color : #DF6626;
+						background-color : #E8E8FF;
+					}
+				}
+			}
+		}
+		a {
+			display : block;
+			text-decoration : none;
+			float : right;
+			line-height : 50px;
+			color : #E8E8FF;
+		}
+	}
+}
+
+.middle_div {
+	margin : 0px auto;
+	width : 1000px;
+}
+
+.footer_div {
+	margin : 0px auto;
+	width : 1000px;
+	text-align : center;
+	font-size : 12px;
+	clear : both;
+	p {
+		line-height : 20px;
+	}
+	a {
+		text-decoration : none;
+		&:hover {
+			color : #EDAB1E;
+		}
+	}
+}
+
+.pay_div {
+	margin-top : 10px;
+	margin-bottom : 10px;
+	border : 3px solid gray;
+	padding : 10px;
+	a {
+		text-decoration : none;
+		&:hover {
+			color : red;
+		}
+	}
+}
+
+.comment {
+	ul {
+		li {
+			display : relative;
+			list-style-type : none;
+			margin-bottom : 20px;
+			.layer {
+				float : right;
+			}
+			.head {
+				display : inline;
+				img {
+					border-radius : 25px;
+				}
+			}
+			.time {
+				display : inline;
+				position : relative;
+				top: -15px;
+				left: 10px;
+				color : #2980C3;
+			}
+			.name {
+				display : inline;
+				position : relative;
+				top: -15px;
+				left: 30px;
+				a {
+					text-decoration : none;
+					&:hover {
+						color : red;
+					}
+				}
+			}
+			.comment {
+				text-indent : 32px;
+				font-size : 14px;
+				line-height : 20px;
+			}
+		}
+	}
+}

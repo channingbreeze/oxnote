@@ -1,0 +1,537 @@
+/*build oxnote at 2015-01-02 22:36:34 */
+.G-Clear {
+  clear: both;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  overflow-y: scroll;
+}
+
+.menu_div {
+  height: 50px;
+  background-color: #670064;
+  border-bottom: 1px solid #E8E8FF;
+}
+
+.menu_div .inner_menu_div {
+  width: 1000px;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.menu_div .inner_menu_div .menu_title {
+  float: left;
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 50px;
+  color: white;
+}
+
+.menu_div .inner_menu_div ul {
+  float: left;
+  margin-left: 100px;
+}
+
+.menu_div .inner_menu_div ul li {
+  float: left;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  list-style-type: none;
+}
+
+.menu_div .inner_menu_div ul li a {
+  display: block;
+  width: 50px;
+  height: 50px;
+  font-weight: bold;
+  line-height: 50px;
+  color: #E8E8FF;
+  text-decoration: none;
+}
+
+.menu_div .inner_menu_div ul li a:hover {
+  color: #DF6626;
+  background-color: #E8E8FF;
+}
+
+.menu_div .inner_menu_div a {
+  display: block;
+  float: right;
+  line-height: 50px;
+  color: #E8E8FF;
+  text-decoration: none;
+}
+
+.middle_div {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.footer_div {
+  width: 1000px;
+  margin: 0 auto;
+  clear: both;
+  font-size: 12px;
+  text-align: center;
+}
+
+.footer_div p {
+  line-height: 20px;
+}
+
+.footer_div a {
+  text-decoration: none;
+}
+
+.footer_div a:hover {
+  color: #EDAB1E;
+}
+
+.pay_div {
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: 3px solid gray;
+}
+
+.pay_div a {
+  text-decoration: none;
+}
+
+.pay_div a:hover {
+  color: red;
+}
+
+.comment ul li {
+  display: relative;
+  margin-bottom: 20px;
+  list-style-type: none;
+}
+
+.comment ul li .layer {
+  float: right;
+}
+
+.comment ul li .head {
+  display: inline;
+}
+
+.comment ul li .head img {
+  border-radius: 25px;
+}
+
+.comment ul li .time {
+  position: relative;
+  top: -15px;
+  left: 10px;
+  display: inline;
+  color: #2980C3;
+}
+
+.comment ul li .name {
+  position: relative;
+  top: -15px;
+  left: 30px;
+  display: inline;
+}
+
+.comment ul li .name a {
+  text-decoration: none;
+}
+
+.comment ul li .name a:hover {
+  color: red;
+}
+
+.comment ul li .comment {
+  font-size: 14px;
+  line-height: 20px;
+  text-indent: 32px;
+}
+
+.index_div .title_span {
+  display: block;
+  font-size: 16px;
+  font-weight: bold;
+  color: #215183;
+  text-indent: 5px;
+  border-left: 2px solid #215183;
+}
+
+.index_div .person_div {
+  margin-top: 10px;
+}
+
+.index_div .person_div hr {
+  margin-top: 10px;
+}
+
+.index_div .person_div .one_person_div {
+  padding: 5px;
+  margin-top: 10px;
+  border: 2px dashed #E8E8FF;
+  border-radius: 5px;
+}
+
+.index_div .person_div .one_person_div .person_name {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.index_div .person_div .one_person_div .person_info {
+  margin-top: 5px;
+  font-size: 14px;
+  line-height: 20px;
+  text-indent: 25px;
+}
+
+.index_div .person_div .one_person_div .person_info a {
+  text-decoration: none;
+}
+
+.index_div .person_div .one_person_div .person_info a:hover {
+  color: #EDAB1E;
+}
+
+.index_div .half_div {
+  float: left;
+  width: 500px;
+  height: 350px;
+  margin-top: 10px;
+}
+
+.index_div .half_div .inner_hald_div {
+  width: 495px;
+  margin: 0;
+}
+
+.index_div .half_div .inner_hald_div hr {
+  margin-top: 10px;
+}
+
+.index_div .half_div .inner_hald_div ul li {
+  margin-top: 10px;
+  margin-left: 10px;
+  list-style-type: none;
+  cursor: pointer;
+}
+
+.index_div .half_div .inner_hald_div ul li .note_title {
+  font-size: 20px;
+  color: #6AC239;
+}
+
+.index_div .half_div .inner_hald_div ul li .note_sub_title {
+  color: #164A81;
+  text-indent: 40px;
+}
+
+.index_div .half_div .inner_hald_div ul li:hover .note_title {
+  color: #DA6D28;
+}
+
+.index_div .half_div .inner_hald_div ul li:hover .note_sub_title {
+  color: #DA6D28;
+}
+
+.index_div .half_div .inner_hald_div .half_button {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.index_div .half_div .inner_hald_div .half_button a {
+  display: block;
+  width: 100px;
+  height: 30px;
+  margin: 0 auto;
+  line-height: 30px;
+  color: black;
+  text-decoration: none;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 10px;
+  outline: none;
+}
+
+.index_div .half_div .inner_hald_div .half_button a:hover {
+  background-color: #B4B4B4;
+}
+
+.study_div ul li {
+  padding: 10px;
+  margin-top: 20px;
+  list-style-type: none;
+  cursor: pointer;
+}
+
+.study_div ul li:hover {
+  background-color: #E8E8FF;
+}
+
+.study_div ul li .title {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.study_div ul li .tag {
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 20px;
+}
+
+.study_div ul li .sub_title {
+  margin-top: 10px;
+  font-size: 13px;
+  color: gray;
+  text-indent: 20px;
+}
+
+.note_div .title_span {
+  display: block;
+  font-size: 16px;
+  font-weight: bold;
+  color: #215183;
+  text-indent: 5px;
+  border-left: 2px solid #215183;
+}
+
+.note_div .block_div {
+  float: left;
+  width: 1000px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.note_div .block_div hr {
+  margin-top: 10px;
+}
+
+.note_div .block_div ul li {
+  float: left;
+  width: 333px;
+  height: 333px;
+  text-align: center;
+  list-style-type: none;
+}
+
+.note_div .block_div ul li img {
+  margin-top: 50px;
+}
+
+.note_div .block_div ul li .type_title {
+  margin-top: 10px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.note_div .block_div ul li .type_info {
+  width: 250px;
+  margin: 10px auto;
+  font-size: 13px;
+  color: gray;
+  text-align: left;
+}
+
+.note_div .block_div ul li .type_button {
+  width: 100px;
+  height: 30px;
+  cursor: pointer;
+  background: white;
+  border: 1px solid black;
+  border-radius: 10px;
+  outline: none;
+}
+
+.note_div .block_div ul li .type_button:hover {
+  background: gray;
+}
+
+.about_div ul {
+  margin-top: 10px;
+}
+
+.about_div ul li {
+  width: 800px;
+  padding: 10px;
+  margin: 10px auto;
+  list-style-type: none;
+}
+
+.about_div ul li .title {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.about_div ul li .sub_title {
+  margin-top: 10px;
+  line-height: 25px;
+  color: gray;
+  text-indent: 32px;
+}
+
+.about_div ul li .sub_title a {
+  text-decoration: none;
+}
+
+.about_div ul li .sub_title a:hover {
+  color: #EDAB1E;
+}
+
+.hire_div ul {
+  width: 800px;
+  margin: 10px auto;
+}
+
+.hire_div ul li {
+  margin-top: 50px;
+  list-style-type: none;
+}
+
+.hire_div ul li .first_div {
+  font-size: 30px;
+  color: blue;
+  text-indent: 60px;
+}
+
+.hire_div .slogan {
+  margin-top: 30px;
+  font-size: 30px;
+  color: red;
+  text-align: center;
+}
+
+.hire_div .mess {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-size: 20px;
+  color: gray;
+  text-align: center;
+}
+
+.conversation_div .viewcount_div {
+  margin-top: 10px;
+  color: gray;
+}
+
+.conversation_div .prev_next_div {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.conversation_div .prev_next_div a {
+  text-decoration: none;
+}
+
+.conversation_div .prev_next_div a:hover {
+  color: red;
+}
+
+.conversation_div .title_div {
+  margin-top: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.conversation_div .sub_title_div {
+  margin-top: 10px;
+  font-size: 13px;
+  line-height: 20px;
+  text-align: center;
+}
+
+.conversation_div .article {
+  margin-top: 20px;
+}
+
+.conversation_div .article p {
+  font-size: 16px;
+  line-height: 30px;
+  text-indent: 32px;
+}
+
+.notedetail_div .left_div {
+  float: left;
+  width: 200px;
+}
+
+.notedetail_div .left_div ul {
+  margin-top: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  border-right: 1px solid #C6E0F1;
+}
+
+.notedetail_div .left_div ul li {
+  margin-top: 10px;
+  margin-left: 10px;
+  font-size: 20px;
+  list-style-type: none;
+}
+
+.notedetail_div .left_div ul li a {
+  text-decoration: none;
+}
+
+.notedetail_div .left_div ul li a:hover {
+  color: red;
+}
+
+.notedetail_div .left_div ul .title1 {
+  text-indent: 0;
+}
+
+.notedetail_div .left_div ul .title2 {
+  font-size: 18px;
+  line-height: 20px;
+  text-indent: 10px;
+}
+
+.notedetail_div .left_div ul .title3 {
+  font-size: 14px;
+  line-height: 20px;
+  text-indent: 20px;
+}
+
+.notedetail_div .right_div {
+  display: relative;
+  float: left;
+  width: 800px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.notedetail_div .right_div .count_div {
+  position: absolute;
+  color: gray;
+}
+
+.notedetail_div .right_div .title {
+  font-size: 30px;
+  text-align: center;
+}
+
+.notedetail_div .right_div .code_div {
+  padding: 10px;
+  margin: 10px;
+  background-color: #F5F5FA;
+}
+
+.notedetail_div .right_div .code_div xmp {
+  float: left;
+}
+
+.notedetail_div .right_div .code_div .try_button {
+  float: right;
+  text-decoration: none;
+}
+
+.notedetail_div .right_div .code_div .try_button:hover {
+  color: red;
+}
