@@ -1,0 +1,1 @@
+define(function(){ var tpl={"noteLis":"{{#each this}}<li><div class=\"note_title\">{{title}}</div><div class=\"note_sub_title\">{{subTitle}}</div></li>{{/each}}"}; return tpl['noteLis'];});

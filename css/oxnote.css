@@ -1,6 +1,131 @@
-/*build oxnote at 2015-01-02 22:36:34 */
+/*build oxnote at 2015-01-09 00:31:00 */
 .G-Clear {
   clear: both;
+}
+
+.dialog_mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: gray;
+  opacity: 0.8;
+}
+
+.dialog {
+  position: fixed;
+  min-width: 600px;
+  background-color: #FFF8D2;
+  border: 2px solid #838383;
+}
+
+.dialog .title {
+  height: 40px;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 40px;
+  color: white;
+  text-align: center;
+  background-color: #670064;
+  border-bottom: 2px solid #838383;
+}
+
+.dialog .content {
+  min-height: 200px;
+}
+
+.dialog .footer {
+  height: 50px;
+  background-color: #E1F8F8;
+}
+
+.dialog .footer .buttons {
+  width: 160px;
+  margin: 0 auto;
+}
+
+.dialog .footer .buttons button {
+  width: 60px;
+  height: 30px;
+  margin-top: 10px;
+  margin-left: 20px;
+  font-size: 14px;
+  line-height: 30px;
+  color: white;
+  cursor: pointer;
+  background-color: blue;
+  border: 0;
+  outline: none;
+}
+
+.dialog .footer .buttons button:hover {
+  background-color: #030383;
+}
+
+.dialog .close {
+  position: absolute;
+  top: 8px;
+  right: 10px;
+}
+
+.dialog .close a {
+  font-family: 'Microsoft Yahei';
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+}
+
+.dialog .close a:hover {
+  color: red;
+}
+
+.loginForm {
+  padding-top: 15px;
+}
+
+.loginForm .oneLine {
+  margin-top: 30px;
+  font-size: 16px;
+  line-height: 30px;
+  text-align: center;
+}
+
+.loginForm .oneLine input[type="text"],
+.loginForm .oneLine input[type="password"] {
+  width: 300px;
+  height: 30px;
+  padding-left: 5px;
+  font-size: 16px;
+}
+
+.loginForm .register {
+  margin-top: 10px;
+  font-size: 13px;
+  text-align: center;
+}
+
+.loginForm .register a {
+  text-decoration: none;
+}
+
+.loginForm .register a:hover {
+  color: #EDAB1E;
+}
+
+.registerForm .oneLine {
+  margin-top: 30px;
+  font-size: 16px;
+  line-height: 30px;
+  text-align: center;
+}
+
+.registerForm .oneLine input[type="text"],
+.registerForm .oneLine input[type="password"] {
+  width: 300px;
+  height: 30px;
+  padding-left: 5px;
+  font-size: 16px;
 }
 
 * {
@@ -75,6 +200,7 @@ body {
 
 .footer_div {
   width: 1000px;
+  height: 60px;
   margin: 0 auto;
   clear: both;
   font-size: 12px;
@@ -82,6 +208,7 @@ body {
 }
 
 .footer_div p {
+  margin-top: 5px;
   line-height: 20px;
 }
 
@@ -106,6 +233,11 @@ body {
 
 .pay_div a:hover {
   color: red;
+}
+
+.comment {
+  margin-top: 10px;
+  margin-bottom: 20px;
 }
 
 .comment ul li {
@@ -153,6 +285,59 @@ body {
   font-size: 14px;
   line-height: 20px;
   text-indent: 32px;
+}
+
+.comment .loginToComment {
+  width: 100%;
+  height: 200px;
+  margin-top: 30px;
+  text-align: center;
+  border: 1px solid gray;
+}
+
+.comment .loginToComment .info {
+  margin-top: 80px;
+  font-size: 20px;
+}
+
+.comment .loginToComment .info a {
+  text-decoration: none;
+}
+
+.comment .loginToComment .info a:hover {
+  color: red;
+}
+
+.comment .userComment {
+  height: 200px;
+  margin-top: 30px;
+  text-align: center;
+}
+
+.comment .userComment textarea {
+  width: 98%;
+  height: 160px;
+  padding: 5px;
+  font-size: 16px;
+  line-height: 20px;
+  outline: none;
+  resize: none;
+}
+
+.comment .userComment button {
+  width: 100px;
+  height: 30px;
+  margin-top: 5px;
+  font-size: 16px;
+  color: white;
+  cursor: pointer;
+  background-color: #63EF2F;
+  border: 0;
+  outline: none;
+}
+
+.comment .userComment button:hover {
+  background-color: #2BAD02;
 }
 
 .index_div .title_span {
@@ -337,6 +522,7 @@ body {
   font-size: 13px;
   color: gray;
   text-align: left;
+  text-indent: 26px;
 }
 
 .note_div .block_div ul li .type_button {
@@ -456,6 +642,14 @@ body {
   text-indent: 32px;
 }
 
+.conversation_div .article a {
+  text-decoration: none;
+}
+
+.conversation_div .article a:hover {
+  text-decoration: underline;
+}
+
 .notedetail_div .left_div {
   float: left;
   width: 200px;
@@ -517,21 +711,54 @@ body {
   text-align: center;
 }
 
-.notedetail_div .right_div .code_div {
+.notedetail_div .right_div .content_div {
+  margin-top: 20px;
+}
+
+.notedetail_div .right_div .content_div p {
+  font-size: 16px;
+  line-height: 30px;
+  text-indent: 32px;
+}
+
+.notedetail_div .right_div .content_div a {
+  text-decoration: none;
+}
+
+.notedetail_div .right_div .content_div a:hover {
+  text-decoration: underline;
+}
+
+.notedetail_div .right_div .content_div .code_div {
   padding: 10px;
   margin: 10px;
   background-color: #F5F5FA;
 }
 
-.notedetail_div .right_div .code_div xmp {
+.notedetail_div .right_div .content_div .code_div pre {
   float: left;
 }
 
-.notedetail_div .right_div .code_div .try_button {
+.notedetail_div .right_div .content_div .code_div .try_button {
   float: right;
   text-decoration: none;
 }
 
-.notedetail_div .right_div .code_div .try_button:hover {
+.notedetail_div .right_div .content_div .code_div .try_button:hover {
   color: red;
+}
+
+.donate {
+  position: relative;
+}
+
+.donate img {
+  position: absolute;
+  top: 30px;
+  left: -120px;
+  display: none;
+}
+
+.donate:hover img {
+  display: block;
 }

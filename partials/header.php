@@ -17,7 +17,18 @@
 				<li><a href="about.php">关于</a></li>
 				<li><a href="hire.php">招聘</a></li>
 			</ul>
-			<a href="#">登陆</a>
+<?php 
+	session_start();
+	if(!isset($_SESSION['user'])) {
+?>
+			<a href="#" id="login">登陆</a>
+<?php 
+	} else {
+?>
+			<a href="#" id="userInfo"><?php echo $_SESSION['user']['username']; ?></a>
+<?php 
+	}
+?>
 		</div>
 	</div>
 	<div class="middle_div">

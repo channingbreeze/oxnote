@@ -19,27 +19,7 @@
 		<div class="new_study inner_hald_div">
 			<span class="title_span">最新学习</span>
 			<hr/>
-			<ul>
-				<li>
-					<div class="note_title">初见</div>
-					<div class="note_sub_title">玩命牛开始学习HTML</div>
-				</li>
-				<li>
-					<div class="note_title">初见</div>
-					<div class="note_sub_title">玩命牛开始学习HTML</div>
-				</li>
-				<li>
-					<div class="note_title">你好你好你好哦啊</div>
-					<div class="note_sub_title">倒萨辅导课韩国日军试用嘀咕发偶分也</div>
-				</li>
-				<li>
-					<div class="note_title">你好你好你好哦啊</div>
-					<div class="note_sub_title">倒萨辅导课韩国日军试用嘀咕发偶分也</div>
-				</li>
-				<li>
-					<div class="note_title">你好你好你好哦啊</div>
-					<div class="note_sub_title">倒萨辅导课韩国日军试用嘀咕发偶分也个</div>
-				</li>
+			<ul id="study_content">
 			</ul>
 			<div class="half_button"><a href="study.php">开始学习</a></div>
 		</div>
@@ -48,27 +28,7 @@
 		<div class="new_study inner_hald_div">
 			<span class="title_span">最新笔记</span>
 			<hr/>
-			<ul>
-				<li>
-					<div class="note_title">HTML基本元素</div>
-					<div class="note_sub_title">讲述了table、tr、td等元素的使用方法</div>
-				</li>
-				<li>
-					<div class="note_title">初见</div>
-					<div class="note_sub_title">玩命牛开始学习HTML</div>
-				</li>
-				<li>
-					<div class="note_title">你好你好你好哦啊</div>
-					<div class="note_sub_title">倒萨辅导课韩国日军试用嘀咕发偶分也</div>
-				</li>
-				<li>
-					<div class="note_title">你好你好你好哦啊</div>
-					<div class="note_sub_title">倒萨辅导课韩国日军试用嘀咕发偶分也</div>
-				</li>
-				<li>
-					<div class="note_title">你好你好你好哦啊</div>
-					<div class="note_sub_title">倒萨辅导课韩国日军试用嘀咕发偶分也个</div>
-				</li>
+			<ul id="note_content">
 			</ul>
 			<div class="half_button"><a href="note.php">复习笔记</a></div>
 		</div>

@@ -6,7 +6,9 @@
 	
 		base: OXNOTE + '/js',
 		alias: {
-			'jquery': 'lib/jquery.min.js'
+			'jquery': 'lib/jquery.min.js',
+			'handlebars': 'lib/handlebars.js',
+			'pagination': 'lib/pagination.js'
 		}
 	
 	});
