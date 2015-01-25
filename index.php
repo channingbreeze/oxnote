@@ -16,7 +16,7 @@
 </div>
 <div>
 	<div class="half_div">
-		<div class="new_study inner_hald_div">
+		<div class="new_study inner_half_div">
 			<span class="title_span">最新学习</span>
 			<hr/>
 			<ul id="study_content">
@@ -25,7 +25,7 @@
 		</div>
 	</div>
 	<div class="half_div">
-		<div class="new_study inner_hald_div">
+		<div class="new_study inner_half_div">
 			<span class="title_span">最新笔记</span>
 			<hr/>
 			<ul id="note_content">

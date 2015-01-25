@@ -15,17 +15,30 @@
 				<li><a href="study.php">学习</a></li>
 				<li><a href="note.php">笔记</a></li>
 				<li><a href="about.php">关于</a></li>
-				<li><a href="hire.php">招聘</a></li>
 			</ul>
 <?php 
-	session_start();
+	if( !isset($_SESSION) ) {
+		session_start();
+	}
 	if(!isset($_SESSION['user'])) {
 ?>
 			<a href="#" id="login">登陆</a>
 <?php 
 	} else {
 ?>
-			<a href="#" id="userInfo"><?php echo $_SESSION['user']['username']; ?></a>
+			<div class="userInfo">
+				<a href="personal.php" id="userInfo"><?php echo $_SESSION['user']['username']; ?></a>
+				<ul>
+					<?php 
+						if($_SESSION['user']['is_admin']) {
+					?>
+					<li><a href="admin.php">管理后台&nbsp;</a></li>
+					<?php
+						} 
+					?>
+					<li><a href="#" id="logout">退出&nbsp;</a></li>
+				</ul>
+			</div>
 <?php 
 	}
 ?>

@@ -1,0 +1,26 @@
+{{#each this}}
+<li>
+	<div class="layer">{{layer}}F</div>
+	<div class="head"><img src="{{#if head_url}}{{head_url}}{{else}}images/default.jpg{{/if}}" /></div>
+	<div class="time">{{gmt_create}}</div>
+	<div class="name">{{username}}</div>
+	{{#if isLogin}}
+	<div class="reply"><a href="#reply" data-id={{id}} data-layer={{layer}}>回复</a></div>
+	{{/if}}
+	<div class="comment">{{content}}</div>
+	{{#if reply}}
+	{{#each reply}}
+	<div class="sublayer">
+		{{#if head_url}}
+		<div class="head"><img src="{{head_url}}" /></div>
+		{{else}}
+		<div class="head"><img src="images/default.jpg" /></div>
+		{{/if}}
+		<div class="time">{{gmt_create}}</div>
+		<div class="name">{{username}}</div>
+		<div class="comment">{{content}}</div>
+	</div>
+	{{/each}}
+	{{/if}}
+</li>
+{{/each}}

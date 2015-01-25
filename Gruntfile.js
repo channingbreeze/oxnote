@@ -1,6 +1,6 @@
 module.exports = function(grunt){
 
-    // ÏîÄ¿ÅäÖÃ
+    // é¡¹ç›®é…ç½®
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
 		banner: '/*build <%= pkg.name %> at <%= grunt.template.today("yyyy-mm-dd HH:MM:ss") %> */\n',
@@ -11,6 +11,10 @@ module.exports = function(grunt){
 				options: {
 					debounceDelay: 250
 				}
+			},
+			template: {
+				files:['tpl/*.html'],
+				tasks: ['build-tpl']
 			}
 		},
 		recess: {
@@ -25,11 +29,11 @@ module.exports = function(grunt){
 		}
     });
 
-    // ¼ÓÔØ²å¼ş
+    // åŠ è½½æ’ä»¶
 	grunt.loadNpmTasks('grunt-recess');
 	grunt.loadNpmTasks('grunt-contrib-watch');
 
-    // ÅäÖÃÈÎÎñ
+    // é…ç½®ä»»åŠ¡
     grunt.registerTask('default', ['build-tpl', 'build-css']);
 	grunt.registerTask('build-watch', ['watch']);
 	grunt.registerTask('build-css', ['recess']);

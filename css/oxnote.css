@@ -1,4 +1,4 @@
-/*build oxnote at 2015-01-09 00:31:00 */
+/*build oxnote at 2015-01-26 00:00:14 */
 .G-Clear {
   clear: both;
 }
@@ -193,6 +193,62 @@ body {
   text-decoration: none;
 }
 
+.menu_div .inner_menu_div .userInfo {
+  position: relative;
+  float: right;
+}
+
+.menu_div .inner_menu_div .userInfo a {
+  display: block;
+  float: right;
+  min-width: 100px;
+  padding-right: 10px;
+  padding-left: 10px;
+  line-height: 50px;
+  color: #E8E8FF;
+  text-align: right;
+  text-decoration: none;
+}
+
+.menu_div .inner_menu_div .userInfo ul {
+  position: absolute;
+  top: 50px;
+  display: none;
+  width: 100%;
+  margin-left: 0;
+}
+
+.menu_div .inner_menu_div .userInfo ul li {
+  width: 100%;
+  text-align: right;
+  border-top: 1px solid gray;
+}
+
+.menu_div .inner_menu_div .userInfo ul li a {
+  display: block;
+  float: right;
+  width: 100%;
+  padding: 0;
+  line-height: 50px;
+  color: #E8E8FF;
+  text-decoration: none;
+}
+
+.menu_div .inner_menu_div .userInfo ul li a:hover {
+  color: #E8E8FF;
+  background-color: #E06426;
+}
+
+.menu_div .inner_menu_div .userInfo:hover a {
+  font-weight: bold;
+  color: black;
+  background-color: #E8E8FF;
+}
+
+.menu_div .inner_menu_div .userInfo:hover ul {
+  display: block;
+}
+
 .middle_div {
   width: 1000px;
   margin: 0 auto;
@@ -240,25 +296,30 @@ body {
   margin-bottom: 20px;
 }
 
-.comment ul li {
+.comment ul.commentUL li {
   display: relative;
+  padding: 10px;
   margin-bottom: 20px;
   list-style-type: none;
 }
 
-.comment ul li .layer {
+.comment ul.commentUL li .sublayer {
+  margin-left: 60px;
+}
+
+.comment ul.commentUL li .layer {
   float: right;
 }
 
-.comment ul li .head {
+.comment ul.commentUL li .head {
   display: inline;
 }
 
-.comment ul li .head img {
+.comment ul.commentUL li .head img {
   border-radius: 25px;
 }
 
-.comment ul li .time {
+.comment ul.commentUL li .time {
   position: relative;
   top: -15px;
   left: 10px;
@@ -266,25 +327,49 @@ body {
   color: #2980C3;
 }
 
-.comment ul li .name {
+.comment ul.commentUL li .name {
   position: relative;
   top: -15px;
   left: 30px;
   display: inline;
 }
 
-.comment ul li .name a {
+.comment ul.commentUL li .name a {
   text-decoration: none;
 }
 
-.comment ul li .name a:hover {
+.comment ul.commentUL li .name a:hover {
   color: red;
 }
 
-.comment ul li .comment {
+.comment ul.commentUL li .reply {
+  position: relative;
+  top: -15px;
+  left: 50px;
+  display: inline;
+  display: none;
+}
+
+.comment ul.commentUL li .reply a {
+  text-decoration: none;
+}
+
+.comment ul.commentUL li .reply a:hover {
+  color: red;
+}
+
+.comment ul.commentUL li .comment {
   font-size: 14px;
   line-height: 20px;
   text-indent: 32px;
+}
+
+.comment ul.commentUL li:hover {
+  background-color: #F0FFE5;
+}
+
+.comment ul.commentUL li:hover .reply {
+  display: inline;
 }
 
 .comment .loginToComment {
@@ -312,6 +397,46 @@ body {
   height: 200px;
   margin-top: 30px;
   text-align: center;
+}
+
+.comment .userComment .replyInfo {
+  position: relative;
+  display: block;
+  width: 98%;
+  margin: 10px auto;
+  text-align: left;
+}
+
+.comment .userComment .replyInfo .replyBox {
+  position: absolute;
+  left: -120px;
+  width: 100px;
+  height: 30px;
+  font-size: 16px;
+  line-height: 30px;
+  border: 1px dashed #BBD9ED;
+}
+
+.comment .userComment .replyInfo .replyBox span {
+  position: absolute;
+  left: 20px;
+}
+
+.comment .userComment .replyInfo .replyBox a {
+  position: absolute;
+  left: 10px;
+  display: none;
+  font-family: 'SimHei';
+  text-decoration: none;
+  outline: none;
+}
+
+.comment .userComment .replyInfo .replyBox a:hover {
+  color: #D8D8D8;
+}
+
+.comment .userComment .replyInfo .replyBox:hover a {
+  display: block;
 }
 
 .comment .userComment textarea {
@@ -391,47 +516,51 @@ body {
   margin-top: 10px;
 }
 
-.index_div .half_div .inner_hald_div {
+.index_div .half_div .inner_half_div {
   width: 495px;
   margin: 0;
 }
 
-.index_div .half_div .inner_hald_div hr {
+.index_div .half_div .inner_half_div hr {
   margin-top: 10px;
 }
 
-.index_div .half_div .inner_hald_div ul li {
+.index_div .half_div .inner_half_div ul li {
   margin-top: 10px;
   margin-left: 10px;
   list-style-type: none;
   cursor: pointer;
 }
 
-.index_div .half_div .inner_hald_div ul li .note_title {
+.index_div .half_div .inner_half_div ul li a {
+  text-decoration: none;
+}
+
+.index_div .half_div .inner_half_div ul li .note_title {
   font-size: 20px;
   color: #6AC239;
 }
 
-.index_div .half_div .inner_hald_div ul li .note_sub_title {
+.index_div .half_div .inner_half_div ul li .note_sub_title {
   color: #164A81;
   text-indent: 40px;
 }
 
-.index_div .half_div .inner_hald_div ul li:hover .note_title {
+.index_div .half_div .inner_half_div ul li:hover .note_title {
   color: #DA6D28;
 }
 
-.index_div .half_div .inner_hald_div ul li:hover .note_sub_title {
+.index_div .half_div .inner_half_div ul li:hover .note_sub_title {
   color: #DA6D28;
 }
 
-.index_div .half_div .inner_hald_div .half_button {
+.index_div .half_div .inner_half_div .half_button {
   margin-top: 10px;
   margin-bottom: 10px;
   text-align: center;
 }
 
-.index_div .half_div .inner_hald_div .half_button a {
+.index_div .half_div .inner_half_div .half_button a {
   display: block;
   width: 100px;
   height: 30px;
@@ -445,33 +574,37 @@ body {
   outline: none;
 }
 
-.index_div .half_div .inner_hald_div .half_button a:hover {
+.index_div .half_div .inner_half_div .half_button a:hover {
   background-color: #B4B4B4;
 }
 
-.study_div ul li {
+.study_div .studies li {
   padding: 10px;
   margin-top: 20px;
   list-style-type: none;
   cursor: pointer;
 }
 
-.study_div ul li:hover {
+.study_div .studies li:hover {
   background-color: #E8E8FF;
 }
 
-.study_div ul li .title {
+.study_div .studies li a {
+  text-decoration: none;
+}
+
+.study_div .studies li .title {
   font-size: 20px;
   font-weight: bold;
 }
 
-.study_div ul li .tag {
+.study_div .studies li .tag {
   font-size: 16px;
   font-weight: bold;
   line-height: 20px;
 }
 
-.study_div ul li .sub_title {
+.study_div .studies li .sub_title {
   margin-top: 10px;
   font-size: 13px;
   color: gray;
@@ -526,8 +659,13 @@ body {
 }
 
 .note_div .block_div ul li .type_button {
+  display: block;
   width: 100px;
   height: 30px;
+  margin: 0 auto;
+  line-height: 30px;
+  color: black;
+  text-decoration: none;
   cursor: pointer;
   background: white;
   border: 1px solid black;
@@ -568,37 +706,6 @@ body {
 
 .about_div ul li .sub_title a:hover {
   color: #EDAB1E;
-}
-
-.hire_div ul {
-  width: 800px;
-  margin: 10px auto;
-}
-
-.hire_div ul li {
-  margin-top: 50px;
-  list-style-type: none;
-}
-
-.hire_div ul li .first_div {
-  font-size: 30px;
-  color: blue;
-  text-indent: 60px;
-}
-
-.hire_div .slogan {
-  margin-top: 30px;
-  font-size: 30px;
-  color: red;
-  text-align: center;
-}
-
-.hire_div .mess {
-  margin-top: 30px;
-  margin-bottom: 30px;
-  font-size: 20px;
-  color: gray;
-  text-align: center;
 }
 
 .conversation_div .viewcount_div {
@@ -756,9 +863,194 @@ body {
   position: absolute;
   top: 30px;
   left: -120px;
+  z-index: 1;
   display: none;
 }
 
 .donate:hover img {
   display: block;
+}
+
+.admin_div .nav {
+  width: 360px;
+  margin: 30px auto;
+}
+
+.admin_div .nav ul li {
+  float: left;
+  margin-left: 20px;
+  list-style-type: none;
+}
+
+.admin_div .nav ul li button {
+  width: 100px;
+  height: 30px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: #57EF0B;
+  border: 0;
+  outline: none;
+}
+
+.admin_div .nav ul li button:hover {
+  color: #DE5F25;
+  background-color: #20A802;
+}
+
+.admin_div .manage {
+  display: none;
+  width: 100%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.admin_div .manage table {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.admin_div .manage table tr {
+  height: 30px;
+}
+
+.admin_div .manage .topCheckDiv {
+  margin-bottom: 20px;
+}
+
+.admin_div .manage .topCheckDiv input[type="text"] {
+  width: 400px;
+  height: 30px;
+  padding-left: 5px;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.admin_div .manage .topCheckDiv button {
+  width: 100px;
+  height: 34px;
+  margin-left: 20px;
+  font-size: 20px;
+  line-height: 30px;
+  color: white;
+  cursor: pointer;
+  background-color: #094484;
+  border: 0;
+  outline: none;
+}
+
+.admin_div .manage .topCheckDiv button:hover {
+  background-color: #05274D;
+}
+
+.studyForm {
+  margin-bottom: 30px;
+}
+
+.studyForm .oneLine {
+  margin-top: 30px;
+  font-size: 16px;
+  line-height: 30px;
+  text-align: center;
+}
+
+.studyForm .oneLine input[type="text"],
+.studyForm .oneLine input[type="password"] {
+  width: 300px;
+  height: 30px;
+  padding-left: 5px;
+  font-size: 16px;
+}
+
+.noteForm {
+  margin-bottom: 30px;
+}
+
+.noteForm .oneLine {
+  margin-top: 30px;
+  font-size: 16px;
+  line-height: 30px;
+  text-align: center;
+}
+
+.noteForm .oneLine input[type="text"],
+.noteForm .oneLine input[type="password"] {
+  width: 300px;
+  height: 30px;
+  padding-left: 5px;
+  font-size: 16px;
+}
+
+.pagination {
+  display: inline-block;
+  margin: 10px auto;
+  text-align: center;
+}
+
+.pagination li {
+  float: left;
+  width: 20px;
+  height: 20px;
+  list-style-type: none;
+}
+
+.personal_div .personalInfo {
+  height: 100px;
+  margin: 20px auto;
+  text-align: center;
+}
+
+.personal_div .personalInfo img {
+  border-radius: 25px;
+}
+
+.personal_div .personalInfo span {
+  display: inline-block;
+  height: 50px;
+  margin-left: 30px;
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 50px;
+  vertical-align: top;
+}
+
+.personal_div .selectTitle {
+  width: 500px;
+  margin: 20px auto;
+}
+
+.personal_div ul {
+  width: 500px;
+  margin: 20px auto;
+}
+
+.personal_div ul li {
+  float: left;
+  margin-top: 30px;
+  margin-left: 30px;
+  list-style-type: none;
+}
+
+.personal_div ul li img {
+  border-radius: 25px;
+}
+
+.personal_div ul li:hover {
+  background: #D8D8D8;
+}
+
+.personal_div ul li.current {
+  background: #61E014;
+}
+
+.personal_div .headImageBtn {
+  display: none;
+  width: 100px;
+  height: 30px;
+  margin: 50px auto;
+  font-size: 14px;
+  font-weight: bold;
+  background: #90C0EA;
+  outline: none;
 }

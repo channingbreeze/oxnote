@@ -1,10 +1,14 @@
 define(function(require, exports, module){
 
 	require('jquery');
+	require('handlebars');
+	require('pagination');
+	
 	Dialog = require('modules/dialog').Dialog;
 	
 	var loginDialog = new Dialog();
 	var registerDialog = new Dialog();
+	var curPage = 0;
 	
 	$('#loginComment').on('click', function(e){
 		e.preventDefault();
@@ -60,5 +64,62 @@ define(function(require, exports, module){
 			}
 		});
 	});
+	
+	var replyNum = 0;
+	
+	$('#sendComment').on('click', function(){
+		$.post('inter/comment/addComment.php', {content : $('#userInputComment').val(), replyNum : replyNum, type : commentType, paperId : ID}, function(data) {
+			if(data === "true") {
+				refresh(curPage);
+				$('#userInputComment').val('');
+			} else {
+				window.alert('评论失败');
+			}
+		});
+	});
+	
+	var commentTpl = require('tpl/comments');
+	
+	var bindReply = function() {
+		$('.reply').find('a').on('click', function(e) {
+			e.preventDefault();
+			$this = $(this);
+			$('#layerNum').html($this.data('layer'));
+			$('.replyInfo').css('display', 'block');
+			replyNum = $this.data('id');
+		});
+		$('#closeReply').on('click', function(e) {
+			e.preventDefault();
+			$('.replyInfo').css('display', 'none');
+			replyNum = 0;
+		});
+	};
+
+	var refresh = function(toPage) {
+		curPage = toPage;
+		$.post('inter/comment/getComment.php', { type : commentType, id : ID, curPage : toPage}, function(data) {
+			data = JSON.parse(data);
+			for(var i=0; i<data.comment.length; i++) {
+				if(data.comment[i].reply) {
+					data.comment[i].reply = JSON.parse(data.comment[i].reply);
+				}
+			}
+			if(data.totalPage) {
+				$('#comments').html(Handlebars.compile(commentTpl)(data.comment));
+				var pagination = $.pagination({
+					toPage : parseInt(data.curPage),
+					totalPage : parseInt(data.totalPage)
+				});
+				$('#commentsPagination').html(pagination);
+				$('#commentsPagination').find('a').on('click', function(e) {
+					e.preventDefault();
+					refresh($(this).data('to'));
+				});
+				bindReply();
+			}
+		});
+	};
+	
+	refresh(1);
 	
 });

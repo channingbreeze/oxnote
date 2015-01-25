@@ -55,6 +55,56 @@ body {
 			line-height : 50px;
 			color : #E8E8FF;
 		}
+		.userInfo {
+			float : right;
+			position : relative;
+			a {
+				display : block;
+				text-decoration : none;
+				float : right;
+				line-height : 50px;
+				padding-left : 10px;
+				padding-right : 10px;
+				color : #E8E8FF;
+				min-width : 100px;
+				text-align : right;
+			}
+			ul {
+				width : 100%;
+				margin-left : 0px;
+				position : absolute;
+				top : 50px;
+				display : none;
+				li {
+					width : 100%;
+					text-align : right;
+					border-top : 1px solid gray;
+					a {
+						width : 100%;
+						display : block;
+						text-decoration : none;
+						float : right;
+						line-height : 50px;
+						color : #E8E8FF;
+						padding : 0px;
+						&:hover {
+							background-color : #E06426;
+							color : #E8E8FF;
+						}
+					}
+				}
+			}
+			&:hover {
+				a {
+					background-color : #E8E8FF;
+					color : black;
+					font-weight : bold;
+				}
+				ul {
+					display : block;
+				}
+			}
+		}
 	}
 }
 
@@ -98,11 +148,15 @@ body {
 .comment {
 	margin-top : 10px;
 	margin-bottom : 20px;
-	ul {
+	ul.commentUL {
 		li {
 			display : relative;
 			list-style-type : none;
 			margin-bottom : 20px;
+			padding : 10px;
+			.sublayer {
+				margin-left : 60px;
+			}
 			.layer {
 				float : right;
 			}
@@ -131,10 +185,29 @@ body {
 					}
 				}
 			}
+			.reply {
+				display : inline;
+				position : relative;
+				top: -15px;
+				left: 50px;
+				display : none;
+				a {
+					text-decoration : none;
+					&:hover {
+						color : red;
+					}
+				}
+			}
 			.comment {
 				text-indent : 32px;
 				font-size : 14px;
 				line-height : 20px;
+			}
+			&:hover {
+				background-color : #F0FFE5;
+				.reply {
+					display : inline;
+				}
 			}
 		}
 	}
@@ -159,6 +232,42 @@ body {
 		height : 200px;
 		margin-top : 30px;
 		text-align : center;
+		.replyInfo {
+			width : 98%;
+			display : block;
+			text-align : left;
+			margin : 10px auto;
+			position : relative;
+			.replyBox {
+				width : 100px;
+				height : 30px;
+				font-size : 16px;
+				line-height : 30px;
+				position : absolute;
+				left : -120px;
+				border : 1px dashed #BBD9ED;
+				span {
+					position : absolute;
+					left : 20px;
+				}
+				a {
+					outline : none;
+					position : absolute;
+					left : 10px;
+					text-decoration : none;
+					font-family : 'SimHei';
+					display : none;
+					&:hover {
+						color : #D8D8D8;
+					}
+				}
+				&:hover {
+					a {
+						display : block;
+					}
+				}
+			}
+		}
 		textarea {
 			width : 98%;
 			height : 160px;

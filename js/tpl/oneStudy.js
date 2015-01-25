@@ -1,0 +1,1 @@
+define(function(){ var tpl={"oneStudy":"{{#each this}}<li><a href=\"conversation.php?id={{id}}\"><div><span class=\"title\">{{title}}</span>&nbsp;/&nbsp;<span class=\"tag\">{{tag}}</span>&nbsp;/&nbsp;<span class=\"time\">{{gmt_create}}</span></div><div class=\"sub_title\">{{sub_title}}</div></a></li>{{/each}}"}; return tpl['oneStudy'];});

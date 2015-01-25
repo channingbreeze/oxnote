@@ -1,29 +1,17 @@
-<div class="comment">
-	<ul>
-		<li>
-			<div class="layer">1F</div>
-			<div class="head"><img src="images/default.jpg" /></div>
-			<div class="time">2014-01-01 11:22:33</div>
-			<div class="name"><a href="#">小小牛</a></div>
-			<div class="comment">如果您觉得此教程不错，想支持一下，您可以通过支付宝扫码给我们一点如果您觉得此教程不错，想支持一下，您可以通过支付宝扫码给我们一点如果您觉得此教程不错，想支持一下，您可以通过支付宝扫码给我们一点如果您觉得此教程不错，想支持一下，您可以通过支付宝扫码给我们一点如果您觉得此教程不错，想支持一下，您可以通过支付宝扫码给我们一点</div>
-		</li>
-		<li>
-			<div class="layer">1F</div>
-			<div class="head"><img src="images/default.jpg" /></div>
-			<div class="time">2014-01-01 11:22:33</div>
-			<div class="name"><a href="#">小小牛</a></div>
-			<div class="comment">如果您觉得此教程不错，想支持一下，</div>
-		</li>
-		<li>
-			<div class="layer">1F</div>
-			<div class="head"><img src="images/default.jpg" /></div>
-			<div class="time">2014-01-01 11:22:33</div>
-			<div class="name"><a href="#">小小牛</a></div>
-			<div class="comment">如果您觉得此教程不错，想支持一下，您可以通过支付宝扫码给我们一点如果您觉得此教程不错，想支持一下，您可以通过支付宝扫码给我们一点如果您觉得此教程不错，想支持一下，您可以通过支付宝扫码给我们一点如果您觉得此教程不错，想支持一下，您可以通过支付宝扫码给我们一点如果您觉得此教程不错，想支持一下，您可以通过支付宝扫码给我们一点</div>
-		</li>
-	</ul>
-	<div>分页</div>
 <?php 
+	
+require_once dirname ( __FILE__ ) . '/../service/commentService.class.php';
+
+?>
+<div class="comment">
+	<ul class="commentUL" id="comments">
+		
+	</ul>
+	<div id="commentsPagination"></div>
+<?php 
+	if( !isset($_SESSION) ) {
+		session_start();
+	}
 	if(!isset($_SESSION['user'])) {
 ?>
 	<div class="loginToComment">
@@ -33,6 +21,7 @@
 	} else {
 ?>
 	<div class="userComment">
+		<div class="replyInfo" style="display : none;"><a name="reply"></a><div class="replyBox"><span>回复&nbsp;<div style="display : inline;" id="layerNum">1</div>F：</span><a id="closeReply" href="#">X</a></div></div>
 		<textarea id="userInputComment"></textarea>
 		<button id="sendComment">发表评论</button>
 	</div>

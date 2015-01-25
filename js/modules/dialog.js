@@ -4,7 +4,7 @@ define(function(require, exports){
 	
 	var Dialog = function() {
 		
-		var mask = '<div id="dialog_mask" class="dialog_mask"></div>'
+		var mask = '<div id="dialog_mask" class="dialog_mask"></div>';
 		
 		var $dialog = null;
 		var $mask = null;
@@ -23,18 +23,22 @@ define(function(require, exports){
 		var showMask = function() {
 			$('body').append(mask);
 			$mask = $('#dialog_mask');
-			$mask.height( $('body').height() );
-		}
+			var maxHeight = $('body').height();
+			if(maxHeight < $(window).height()) {
+				maxHeight = $(window).height();
+			}
+			$mask.height( maxHeight );
+		};
 		
 		var removeMask = function() {
 			$mask.remove();
 			$mask = null;
-		}
+		};
 		
 		var makeDialog = function() {
 			var dialog = '<div id="dialog" class="dialog"><div class="title">' + options.title + '</div><div class="content">' + options.content + '</div><div class="footer"><div class="buttons"><button id="dialog_button_ok">' + options.okText + '</button><button id="dialog_button_cancel">' + options.cancelText + '</button></div></div><div class="close"><a id="dialog_close_button" href="#">X</a></div></div>';
 			return dialog;
-		}
+		};
 		
 		var showDialog = function() {
 			$('body').append(makeDialog());
@@ -65,7 +69,7 @@ define(function(require, exports){
 				options.onCancel();
 				removeDialog();
 			});
-		}
+		};
 		
 		var removeDialog = function() {
 			$dialog.animate({top : '120px'}, {easing : 'swing', duration : 100, complete : function(){
@@ -76,19 +80,19 @@ define(function(require, exports){
 					$dialog = null;
 				}});
 			}});
-		}
+		};
 		
 		this.show = function(ops) {
 			showMask();
 			$.extend(options, ops);
 			showDialog();
-		}
+		};
 		
 		this.close = function() {
 			removeDialog();
-		}
+		};
 		
-	}
+	};
 	
 	exports.Dialog = Dialog;
 	

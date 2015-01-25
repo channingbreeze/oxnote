@@ -10,7 +10,7 @@ define(function(require, exports, module){
 		e.preventDefault();
 		loginDialog.show({
 			title : '登陆',
-			content : '<form class="loginForm" id="loginForm"><div class="oneLine">用户名：<input type="text" name="username" placeholder="请输入用户名" id="usernameInput"/></div><div class="oneLine">密　码：<input type="password" name="password" placeholder="请输入密码"/></div><div class="register">没有账号？<a href="#" id="register">立即注册</a></div></form>',
+			content : require('tpl/dialogLogin'),
 			okText : '登陆',
 			onShowDone : function() {
 				$('#usernameInput').focus();
@@ -36,7 +36,7 @@ define(function(require, exports, module){
 				if(loginDialog.register) {
 					registerDialog.show({
 						title : '注册',
-						content : '<form class="registerForm" id="registerForm"><div class="oneLine">　用户名：<input type="text" name="username" placeholder="请输入用户名" id="usernameInput"/></div><div class="oneLine">　密　码：<input type="password" name="password" id="password" placeholder="请输入密码"/></div><div class="oneLine">确认密码：<input type="password" id="repassword" placeholder="请再次输入密码"/></div></form>',
+						content : require('tpl/dialogRegister'),
 						okText : '注册',
 						onShowDone : function() {
 							$('#usernameInput').focus();
@@ -57,6 +57,17 @@ define(function(require, exports, module){
 						}
 					});
 				}
+			}
+		});
+	});
+	
+	$('#logout').on('click', function(e){
+		console.log('11');
+		e.preventDefault();
+		$.post('inter/user/userLogout.php', '', function(data) {
+			console.log(data);
+			if(data == "success") {
+				location.reload();
 			}
 		});
 	});

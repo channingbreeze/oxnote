@@ -8,7 +8,9 @@
 		alias: {
 			'jquery': 'lib/jquery.min.js',
 			'handlebars': 'lib/handlebars.js',
-			'pagination': 'lib/pagination.js'
+			'pagination': 'lib/pagination.js',
+			'ajaxfileupload': 'lib/jquery.ajaxfileupload.js',
+			'serializejson': 'lib/jquery.serializeJson.js'
 		}
 	
 	});
