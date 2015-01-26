@@ -12,6 +12,12 @@ require_once  dirname ( __FILE__ ) . '/service/userService.class.php';
 	$user = $userService->getUserById($_SESSION['user']['userid']);
 	
 ?>
+<!DOCTYPE html>
+<head>
+	<meta charset=utf-8 />
+	<title>个人主页|玩命牛的成长记录|互联网教程|互联网|精品教程|玩命牛|成长记录</title>
+	<meta name="Keywords" content="个人主页，互联网教程，互联网精品教程，教程，互联网，玩命牛，成长记录" />
+	<meta name="Description" content="玩命牛的成长记录是一个为小白提供的互联网情景教程，由牛人带领小白一步一步成为高手" />
 <?php 
 	include_once 'partials/header.php';
 ?>
