@@ -13,7 +13,7 @@
 	<hr/>
 	<div class="one_person_div">
 		<div class="person_name">欣欣（1989—）</div>
-		<div class="person_info">自动化专业研究生，转行当程序员，在一家国内领先的IT公司工作，业余时间兼职创业，创办网站<a href="http://www.xinxinweb.xyz" target="blank">欣欣网站制作</a>。</div>
+		<div class="person_info">自动化专业研究生，转行当程序员，在一家国内领先的IT公司工作，业余时间兼职创业，创办网站<a href="http://www.webxinxin.com" target="blank" rel="nofollow">欣欣网站制作</a>。</div>
 	</div>
 	<div class="one_person_div">
 		<div class="person_name">玩命牛（1989—）</div>
