@@ -27,7 +27,7 @@
 		</li>
 		<li>
 			<div class="title">创业实习</div>
-			<div class="sub_title">更可加入创业团队，<a href="http://www.xinxinweb.xyz" target="blank">欣欣网站制作</a>，与故事主人公一起体验创业的过程，让您亲身经历互联网创业的每一个细节，感受互联网带给我们前所未有的冲击。</div>
+			<div class="sub_title">更可加入创业团队，<a href="http://www.webxinxin.com" target="blank" rel="nofollow">欣欣网站制作</a>，与故事主人公一起体验创业的过程，让您亲身经历互联网创业的每一个细节，感受互联网带给我们前所未有的冲击。</div>
 		</li>
 	</ul>
 </div>
