@@ -3,8 +3,8 @@
 	
 	$id = 1;
 	
-	if(isset($_POST['id'])) {
-		$id = $_POST['id'];
+	if(isset($_GET['id'])) {
+		$id = $_GET['id'];
 	}
 	
 	$studyService = new StudyService();
