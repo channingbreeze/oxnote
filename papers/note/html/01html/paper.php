@@ -5,7 +5,7 @@
 	echo htmlspecialchars(file_get_contents("papers/note/html/01html/resources/case01.html"));
 ?>
 	</pre>
-	<a class="try_button" href="papers/note/html/01html/resources/case01.html" target="blank">check the result</a>
+	<a class="try_button" href="papers/note/html/01html/resources/case01.html" target="_blank">check the result</a>
 	<div class="G-Clear"></div>
 </div>
 <p>其中，第一行声明这是一个HTML文档；head是一些头信息，其中charset是字符集，title是页面标题；body中是页面内容。</p>
@@ -19,7 +19,7 @@
 	echo htmlspecialchars(file_get_contents("papers/note/html/01html/resources/case02.html"));
 ?>
 	</pre>
-	<a class="try_button" href="papers/note/html/01html/resources/case02.html" target="blank">check the result</a>
+	<a class="try_button" href="papers/note/html/01html/resources/case02.html" target="_blank">check the result</a>
 	<div class="G-Clear"></div>
 </div>
 <p>这么轻松就把html搞懂了，还真是挺简单的，但是怎么还是感觉做不出漂亮的网页呢？</p>

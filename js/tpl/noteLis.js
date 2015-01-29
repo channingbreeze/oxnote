@@ -1,1 +1,1 @@
-define(function(){ var tpl={"noteLis":"{{#each this}}<li><a href=\"notedetail.php?id={{id}}\"><div class=\"note_title\">{{title}}</div><div class=\"note_sub_title\">{{sub_title}}</div></a></li>{{/each}}"}; return tpl['noteLis'];});
+define(function(){ var tpl={"noteLis":"{{#each this}}<li><a href=\"notedetail.php?category={{category}}&id={{id}}\"><div class=\"note_title\">{{title}}</div><div class=\"note_sub_title\">{{sub_title}}</div></a></li>{{/each}}"}; return tpl['noteLis'];});
