@@ -17,7 +17,7 @@
 <!DOCTYPE html>
 <head>
 	<meta charset=utf-8 />
-	<title><?php echo $study[0]['title'];?>|玩命牛的成长记录|互联网教程|互联网|精品教程|玩命牛|成长记录</title>
+	<title>玩命牛的成长记录-<?php echo $study[0]['title'];?></title>
 	<meta name="Keywords" content="<?php echo $study[0]['title'];?>，<?php echo $study[0]['sub_title'];?>，互联网教程，互联网精品教程，教程，互联网，玩命牛，成长记录" />
 	<meta name="Description" content="玩命牛的成长记录是一个为小白提供的互联网情景教程，由牛人带领小白一步一步成为高手" />
 <?php 

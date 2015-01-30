@@ -1,4 +1,4 @@
-<p>“你看，我把你给我的资料都看完了，也做了<a href="notedetail.php?category=html" target="blank">笔记</a>，但是感觉自己根本做不出好看的界面啊！”，玩命牛略带炫耀地给欣欣看自己的笔记。</p>
+<p>“你看，我把你给我的资料都看完了，也做了<a href="notedetail.php?category=html&id=1" target="_blank">笔记</a>，但是感觉自己根本做不出好看的界面啊！”，玩命牛略带炫耀地给欣欣看自己的笔记。</p>
 <p>“哈哈，我就知道会这样，那你先说说你都学会了什么？”，欣欣想看看玩命牛学到了什么程度。</p>
 <p>“也就知道了基本html页面结构，学了几个标签，title、h1、a、img、table、ul li、div、span、form、input等等，就觉得a标签还挺好用的，可以跳到别的页面，title、h1、table也稍微有点用，ul li、div、span、form、input这几个东西有啥用根本不知道，我要做的是高端大气上档次，狂拽炫酷吊炸天的页面，你给我学的这些感觉没啥用啊！”，玩命牛抱怨道。</p>
 <p>“想做漂亮的页面不是一天就能学会的，你看了<a href="http://www.w3school.com.cn/html/html_layout.asp" target="blank" rel="nofollow">HTML布局</a>这节吗？”，欣欣给了玩命牛一个页面。</p>
