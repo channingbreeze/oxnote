@@ -122,4 +122,8 @@ define(function(require, exports, module){
 	
 	refresh(1);
 	
+	$('#donate').on('click', function(e){
+		e.preventDefault();
+	});
+	
 });

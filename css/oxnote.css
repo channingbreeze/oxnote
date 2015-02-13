@@ -1,4 +1,4 @@
-/*build oxnote at 2015-01-30 14:34:14 */
+/*build oxnote at 2015-02-13 22:51:00 */
 .G-Clear {
   clear: both;
 }
@@ -266,6 +266,10 @@ body {
 .footer_div p {
   margin-top: 5px;
   line-height: 20px;
+}
+
+.footer_div p span {
+  font-family: 'Arial';
 }
 
 .footer_div a {
