@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<head>
+<meta charset=utf-8 />
+<title>贪吃蛇游戏</title>
+</head>
+<body>
+	<h1>按键事件</h1>
+	<div id="keypress"></div>
+	<div id="keydown"></div>
+	<div id="keyup"></div>
+	<script>
+		document.onkeypress = function(e) {
+			document.getElementById('keypress').innerText = 
+				'press : ' + e.keyCode + ' ' + e.which + ' ' + e.charCode;
+		}
+		document.onkeydown = function(e) {
+			document.getElementById('keydown').innerText = 
+				'down : ' + e.keyCode + ' ' + e.which + ' ' + e.charCode;
+		}
+		document.onkeyup = function(e) {
+			document.getElementById('keyup').innerText = 
+				'up : ' + e.keyCode + ' ' + e.which + ' ' + e.charCode;
+		}
+	</script>
+</body>	

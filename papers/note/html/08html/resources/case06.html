@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<head>
+<meta charset=utf-8 />
+<title>贪吃蛇游戏</title>
+</head>
+<style>
+	.map {
+		width : 400px;
+		height : 400px;
+		border : 5px solid brown;
+		background-color : transparent;
+		position : relative;
+	}
+	.snakehead, .snake, .target {
+		width : 20px;
+		height : 20px;
+		position : absolute;
+	}
+	.snakehead {
+		background-color : pink;
+	}
+	.snake {
+		background-color : red;
+	}
+	.target {
+		background-color : blue;
+	}
+</style>
+<body>
+	<h1>贪吃蛇</h1>
+	<div class="map" id="map"></div>
+	<script>
+		// 0:up 1:left 2:down 3:right
+		var dir = 3;
+		var step = [{dx : 0, dy : -20},
+			{dx : -20, dy : 0},
+			{dx : 0, dy : 20},
+			{dx : 20, dy : 0}];
+		// the snake, a array of div
+		var snake = [];
+		// the snake target
+		var target;
+		// timer
+		var timer = undefined;
+		// can not act two key in one interval
+		var isKey = false;
+		// add snake
+		var add = function(left, top, className) {
+			var newNode = document.createElement('div');
+			newNode.className = className;
+			newNode.style.left = left + 'px';
+			newNode.style.top = top + 'px';
+			document.getElementById('map').appendChild(newNode);
+			snake.push(newNode);
+		};
+		// judge the target in snake
+		var inSnake = function(newx, newy, type) {
+			var start = 0;
+			if(type == 'all') {
+				start = 0;
+			} else if(type == 'body') {
+				start = 1;
+			}
+			for (var i = start; i<snake.length; i++) {
+				if(parseInt(snake[i].style.left) == newx
+				&& parseInt(snake[i].style.top) == newy) {
+					return true;
+				}
+			}
+			return false;
+		};
+		// new target
+		var newTarget = function() {
+			var newx = -1;
+			var newy = -1;
+			while(newx == -1 || newy == -1 || inSnake(newx, newy, 'all')) {
+				newx = (Math.floor(Math.random()*20) * 20);
+				newy = (Math.floor(Math.random()*20) * 20);
+			}
+			target.style.left = newx + 'px';
+			target.style.top = newy + 'px';
+		};
+		// snake move
+		var move = function() {
+			// calculate next head pos
+			var nextx, nexty;
+			nextx = parseInt(snake[0].style.left) + step[dir].dx;
+			nexty = parseInt(snake[0].style.top) + step[dir].dy;
+			// is Game Over?
+			if(nextx < 0 || nextx > 380 || nexty < 0 || nexty > 380) {
+				clearInterval(timer);
+				window.alert('Game Over!');
+				return;
+			}
+			// move
+			var tailLeft = snake[snake.length-1].style.left;
+			var tailTop = snake[snake.length-1].style.top;
+			for(var i=snake.length-1; i>0; i--) {
+				snake[i].style.left = snake[i-1].style.left;
+				snake[i].style.top = snake[i-1].style.top;
+			}
+			snake[0].style.left = nextx + 'px';
+			snake[0].style.top = nexty + 'px';
+			// is get food?
+			if(nextx == parseInt(target.style.left) &&
+				nexty == parseInt(target.style.top)) {
+				add(parseInt(tailLeft), parseInt(tailTop), 'snake');
+				newTarget();
+			}
+			// snake head meet snake body
+			if(inSnake(parseInt(snake[0].style.left),
+						parseInt(snake[0].style.top), 'body')) {
+				clearInterval(timer);
+				window.alert('Game Over!');
+				return;
+			}
+			isKey = false;
+		}
+		add(60, 20, 'snakehead');
+		add(40, 20, 'snake');
+		add(20, 20, 'snake');
+		target = document.createElement('div');
+		target.className = 'target';
+		newTarget();
+		document.getElementById('map').appendChild(target);
+		// key event
+		document.onkeydown = function(e) {
+			if(!isKey) {
+				if(e.keyCode == 38) {	//up
+					if(dir != 2) {dir = 0; isKey = true;}
+				} else if(e.keyCode == 39) {	//right
+					if(dir != 1) {dir = 3; isKey = true;}
+				} else if(e.keyCode == 40) {	//down
+					if(dir != 0) {dir = 2; isKey = true;}
+				} else if(e.keyCode == 37) {	//left
+					if(dir != 3) {dir = 1; isKey = true;}
+				}
+			}
+		};
+		// timer
+		timer = setInterval(move, 100);
+	</script>
+</body>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<head>
+<meta charset=utf-8 />
+<title>贪吃蛇游戏</title>
+</head>
+<body>
+	<h1>定时器</h1>
+	<button id="start">开始</button>
+	<button id="stop">停止</button>
+	<div id="num"></div>
+	<script>
+		var i = 0;
+		var timer = undefined;
+		document.getElementById('start').onclick = function() {
+			timer = setInterval(function(){
+				i++;
+				document.getElementById('num').innerText = i;
+			}, 500);
+			document.getElementById('start').disabled = true;
+			document.getElementById('stop').disabled = false;
+		};
+		document.getElementById('stop').onclick = function() {
+			if(timer) {
+				clearInterval(timer);
+				timer = undefined;
+			}
+			document.getElementById('start').disabled = false;
+			document.getElementById('stop').disabled = true;
+		};
+		document.getElementById('stop').disabled = true;
+	</script>
+</body>

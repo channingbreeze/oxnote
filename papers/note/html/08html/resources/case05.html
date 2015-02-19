@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<head>
+<meta charset=utf-8 />
+<title>贪吃蛇游戏</title>
+</head>
+<style>
+	.map {
+		width : 400px;
+		height : 400px;
+		border : 5px solid brown;
+		background-color : transparent;
+		position : relative;
+	}
+	.snake {
+		width : 20px;
+		height : 20px;
+		position : absolute;
+		background-color : red;
+	}
+</style>
+<body>
+	<h1>动态添加DOM元素</h1>
+	<button id="add">添加</button>
+	<div class="map" id="map"></div>
+	<script>
+		var myLeft=0;
+		var myTop=0;
+		document.getElementById('add').onclick = function() {
+			if(myTop < 400) {
+				var newNode = document.createElement('div');
+				newNode.className = 'snake';
+				newNode.style.top = myTop + 'px';
+				newNode.style.left = myLeft + 'px';
+				document.getElementById('map').appendChild(newNode);
+				myLeft += 20;
+				if(myLeft >= 400) {
+					myLeft = 0;
+					myTop += 20;
+					if(myTop >= 400) {
+						window.alert('满了');
+					}
+				}
+			}
+		};
+	</script>
+</body>
