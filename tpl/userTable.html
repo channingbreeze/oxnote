@@ -1,7 +1,7 @@
-<table cellspacing="0px" border="1px" bordercolor="green">
+<table cellspacing="0px" border="1px" bordercolor="green" id="operator">
 	<tr><th>id</th><th>用户名</th><th>手机</th><th>邮箱</th><th>qq</th><th>操作</th></tr>
 	{{#each this}}
-		<tr><td>{{id}}</td><td>{{username}}</td><td>{{mobile}}</td><td>{{email}}</td><td>{{qq}}</td><td id="operator">
+		<tr><td>{{id}}</td><td>{{username}}</td><td>{{mobile}}</td><td>{{email}}</td><td>{{qq}}</td><td>
 		{{#equals is_admin 1}}
 			<a href="#" data-id='{{id}}'>取消管理员</a>
 		{{else}}

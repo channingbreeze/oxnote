@@ -11,3 +11,4 @@
 <p>“对了，你不说我还忘了，表格之前我也看过，看来得去复习复习了。”，玩命牛一下子醍醐灌顶。</p>
 <p>“刚刚瞄了一眼你上节的<a href="notedetail.php?category=html&id=4" target="_blank">笔记</a>，做得不错，但是最后一个例子代码有点冗余了，其实<b>一个元素上是可以指定多个类的</b>，这样你的代码就少很多了。”，欣欣看着玩命牛的笔记说到。</p>
 <p>“哦？是吗？那我回去看看。”，玩命牛虽然不太懂，但是也不准备进一步问了，因为他知道，<b>自己去寻找问题的解决之道才能更快学到知识</b>。</p>
+<div class="note_director">本文笔记在<a href="http://localhost/oxnote/notedetail.php?category=html&id=5" target="_blank">这里</a>。</div>

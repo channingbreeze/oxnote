@@ -19,3 +19,4 @@
 <p>“好的，我这就去给自己武装上这个利器，走了，我要去改造我的网站了，拜拜！”，玩命牛得到这么好的工具，兴高采烈地走了。</p>
 <p>“期待你的下一个案例哦！”，欣欣看着屁颠屁颠的玩命牛说到。</p>
 <p><b>盒子模型是很重要的概念，搞懂它，以后就能精确计算出div的距离了。</b></p>
+<div class="note_director">本文笔记在<a href="http://localhost/oxnote/notedetail.php?category=html&id=3" target="_blank">这里</a>。</div>

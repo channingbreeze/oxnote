@@ -1,4 +1,4 @@
-/*build oxnote at 2015-02-19 17:05:03 */
+/*build oxnote at 2015-03-05 00:26:07 */
 .G-Clear {
   clear: both;
 }
@@ -759,6 +759,14 @@ body {
 
 .conversation_div .article a:hover {
   text-decoration: underline;
+}
+
+.conversation_div .note_director {
+  margin-top: 10px;
+  font-family: 'SimHei';
+  font-size: 20px;
+  font-weight: bold;
+  text-indent: 32px;
 }
 
 .notedetail_div .left_div {

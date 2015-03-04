@@ -12,3 +12,4 @@
 <p>“因为JavaScript一开始并不像C或Java那样受到广泛重视，很多时候只能靠自学，所以精通JavaScript的人自学能力都很强，这样的人还不厉害吗？”，欣欣解释说。</p>
 <p>“哦，原来如此，那我今天就要会会这个JavaScript了”，玩命牛又开始了新的学习旅程。</p>
 <p><b>JavaScript在前端技术中非常重要，甚至现在的新技术nodeJS，可以用JavaScript做后台，所以学好JavaScript是很重要的</b>。</p>
+<div class="note_director">本文笔记在<a href="http://localhost/oxnote/notedetail.php?category=html&id=7" target="_blank">这里</a>。</div>

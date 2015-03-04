@@ -12,3 +12,4 @@
 <p>“这次的笔记很赞，我没有什么要改的。”，欣欣倒是一反常态。</p>
 <p>“那好，我去看定位去喽！”，玩命牛激情满满。</p>
 <p><b>定位确实是网页设计中很重要的概念，务必要认真看，其他一些知识也需要依赖对定位的理解</b>。</p>
+<div class="note_director">本文笔记在<a href="http://localhost/oxnote/notedetail.php?category=html&id=6" target="_blank">这里</a>。</div>

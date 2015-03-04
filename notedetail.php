@@ -35,7 +35,7 @@
 <?php 
 			foreach($notes as $n) {
 ?>
-			<li class="title<?php echo $n['pri'];?>"><a href="notedetail.php?category=html&id=<?php echo $n['id'];?>"><?php echo $n['title'];?></a></li>
+			<li class="title<?php echo $n['pri'];?>"><a href="notedetail.php?category=<?php echo $category;?>&id=<?php echo $n['id'];?>"><?php echo $n['title'];?></a></li>
 <?php 
 			}
 ?>

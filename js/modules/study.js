@@ -17,6 +17,10 @@ define(function(require, exports, module){
 				totalPage : parseInt(data.totalPage)
 			});
 			$('#userPagination').html(pagination);
+			$('#userPagination').find('a').on('click', function(e){
+				e.preventDefault();
+				refreshStudies($(this).data('to'));
+			});
 		});
 		
 	}

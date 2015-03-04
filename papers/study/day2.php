@@ -14,3 +14,4 @@
 <p>“嗯，这次的东西有点难度，不过相信你能够实现，W3School这个页面布局其实并不复杂，你可以不用做这么细，用几个带颜色的块，将页面轮廓勾勒出来就行了”，欣欣怕玩命牛做不出来。</p>
 <p>“好的，没问题”，玩命牛可不想让欣欣看不起，转眼就开始动手了。</p>
 <p><b>想要做出好看的页面，光看教程是不行的，如果不自己动手，是永远学不会的哦！</b></p>
+<div class="note_director">本文笔记在<a href="http://localhost/oxnote/notedetail.php?category=html&id=2" target="_blank">这里</a>。</div>

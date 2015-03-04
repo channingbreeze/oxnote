@@ -13,3 +13,4 @@
 <p>“其实这个导航栏就是a标签，只不过做了样式而已，指定了一些字体大小、字体颜色，而鼠标滑过的效果，是指定了hover，也就是<b>伪类选择器</b>。”，欣欣又道破一个重点。</p>
 <p>“Get，那我只要去查一下伪类选择器的用法就知道是怎么回事啦？”，玩命牛说着就上网搜索去了。</p>
 <p><b>成功不属于不努力的人，也不属于努力的人，只属于最努力的人。</b></p>
+<div class="note_director">本文笔记在<a href="http://localhost/oxnote/notedetail.php?category=html&id=4" target="_blank">这里</a>。</div>
