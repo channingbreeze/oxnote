@@ -16,13 +16,13 @@
 			<img src="images/html.jpg" />
 			<div class="type_title">超文本标记语言</div>
 			<div class="type_info">超文本标记语言（HTML）是网页设计的基础，网页的元素都是由HTML标记组成，故HTML技术是网页设计中不可或缺的技术</div>
-			<a class="type_button" href="notedetail.php?category=html&id=1">阅读笔记</a>
+			<a class="type_button" href="notedetail-html-1.html">阅读笔记</a>
 		</li>
 		<!-- <li>
 			<img src="images/php.jpg" />
 			<div class="type_title">超文本预处理器</div>
 			<div class="type_info">超文本预处理器（PHP）是一种通用开源脚本语言，利于学习，使用广泛，主要适用于Web开发领域</div>
-			<a class="type_button" href="notedetail.php?category=php&id=9">阅读笔记</a>
+			<a class="type_button" href="notedetail-php-9.html">阅读笔记</a>
 		</li> -->
 	</ul>
 	</div>

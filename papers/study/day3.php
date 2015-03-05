@@ -1,4 +1,4 @@
-<p>“Hi，欣欣，我研究了div和float，也做出了类似W3School的布局，这是我的<a href="notedetail.php?category=html&id=2" target="_blank">笔记</a>，怎么样，还不错吧？”，玩命牛觉得自己棒棒哒。</p>
+<p>“Hi，欣欣，我研究了div和float，也做出了类似W3School的布局，这是我的<a href="notedetail-html-2.html" target="_blank.html">笔记</a>，怎么样，还不错吧？”，玩命牛觉得自己棒棒哒。</p>
 <p>“不错，棒棒哒，看来你进步还是很快呀！”，欣欣也鼓励玩命牛。</p>
 <p>“多谢夸奖，但是感觉内容还是有点空洞啊。”，玩命牛想赶紧丰富自己的网站。</p>
 <p>“先不忙添加内容，先来说说你这小例子的一些毛病。”，欣欣看玩命牛尾巴翘得太高，准备泼点凉水。</p>
@@ -19,4 +19,4 @@
 <p>“好的，我这就去给自己武装上这个利器，走了，我要去改造我的网站了，拜拜！”，玩命牛得到这么好的工具，兴高采烈地走了。</p>
 <p>“期待你的下一个案例哦！”，欣欣看着屁颠屁颠的玩命牛说到。</p>
 <p><b>盒子模型是很重要的概念，搞懂它，以后就能精确计算出div的距离了。</b></p>
-<div class="note_director">本文笔记在<a href="http://localhost/oxnote/notedetail.php?category=html&id=3" target="_blank">这里</a>。</div>
+<div class="note_director">本文笔记在<a href="notedetail-html-3.html" target="_blank.html">这里</a>。</div>

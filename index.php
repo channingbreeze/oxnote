@@ -27,7 +27,7 @@
 			<hr/>
 			<ul id="study_content">
 			</ul>
-			<div class="half_button"><a href="study.php">开始学习</a></div>
+			<div class="half_button"><a href="study.html">开始学习</a></div>
 		</div>
 	</div>
 	<div class="half_div">
@@ -36,7 +36,7 @@
 			<hr/>
 			<ul id="note_content">
 			</ul>
-			<div class="half_button"><a href="note.php">复习笔记</a></div>
+			<div class="half_button"><a href="note.html">复习笔记</a></div>
 		</div>
 	</div>
 </div>

@@ -12,4 +12,4 @@
 <p>“装好了让我也玩玩你的游戏，对了，装好之后你可以看看后台语言php了。”，欣欣也很期待玩命牛的游戏。</p>
 <p>“好呀，期待已久的后台终于要出现了。”，玩命牛的兴奋点却在可以进军后台上。</p>
 <p><b>今天搭好服务器，明天开始搞后台</b>。</p>
-<div class="note_director">本文笔记在<a href="http://localhost/oxnote/notedetail.php?category=php&id=9" target="_blank">这里</a>。</div>
+<div class="note_director">本文笔记在<a href="notedetail-php-9.html" target="_blank.html">这里</a>。</div>

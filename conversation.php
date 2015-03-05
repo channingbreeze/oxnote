@@ -26,8 +26,8 @@
 <div class="conversation_div">
 	<div class="viewcount_div"><?php echo $study[0]['visited_count'];?>次阅读</div>
 	<div class="prev_next_div">
-		<?php if($id > 1) {?><a href="conversation.php?id=<?php echo $id-1;?>">上一篇</a><?php }?>
-		<?php if($id < $count) {?><a href="conversation.php?id=<?php echo $id+1;?>">下一篇</a><?php }?>
+		<?php if($id > 1) {?><a href="conversation-<?php echo $id-1;?>.html">上一篇</a><?php }?>
+		<?php if($id < $count) {?><a href="conversation-<?php echo $id+1;?>.html">下一篇</a><?php }?>
 	</div>
 	<hr/>
 	<div class="title_div"><?php echo $study[0]['title'];?></div>
@@ -40,8 +40,8 @@
 	<div class="title_div">&nbsp;</div>
 	<hr/>
 	<div class="prev_next_div">
-		<?php if($id > 1) {?><a href="conversation.php?id=<?php echo $id-1;?>">上一篇</a><?php }?>
-		<?php if($id < $count) {?><a href="conversation.php?id=<?php echo $id+1;?>">下一篇</a><?php }?>
+		<?php if($id > 1) {?><a href="conversation-<?php echo $id-1;?>.html">上一篇</a><?php }?>
+		<?php if($id < $count) {?><a href="conversation-<?php echo $id+1;?>.html">下一篇</a><?php }?>
 	</div>
 </div>
 <?php 

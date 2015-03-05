@@ -16,4 +16,4 @@
 <p>“这个，基础还是要打好的……”，玩命牛这会儿不敢吹牛，毕竟自己也是刚刚接触，还没闹明白是咋回事呢，“不和你说了，我要去学习了”，玩命牛的学习热情顿时被点燃了。</p>
 <p>“记住，可不要只在网站上点一点，一定要自己动手写一写才能学得会哦！”，欣欣叮嘱到。</p>
 <p>玩命牛早已回到自己房间开始学习了。</p>
-<div class="note_director">本文笔记在<a href="http://localhost/oxnote/notedetail.php?category=html&id=1" target="_blank">这里</a>。</div>
+<div class="note_director">本文笔记在<a href="notedetail-html-1.html" target="_blank.html">这里</a>。</div>

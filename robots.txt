@@ -7,3 +7,5 @@ Disallow: /personal.php
 Disallow: /admin.php
 Disallow: /notedetail.php?category=*&id=*
 Disallow: /conversation.php?id=*
+Disallow: /admin.html
+Disallow: /personal.html

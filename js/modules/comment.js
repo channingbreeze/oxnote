@@ -82,7 +82,6 @@ define(function(require, exports, module){
 	
 	var bindReply = function() {
 		$('.reply').find('a').on('click', function(e) {
-			e.preventDefault();
 			$this = $(this);
 			$('#layerNum').html($this.data('layer'));
 			$('.replyInfo').css('display', 'block');

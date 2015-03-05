@@ -9,4 +9,4 @@
 <p>“你这就是敷衍我了，我学了这么久html，难道还不知道，不同的html源码可能出现的是同一个页面展示结果，有可能有一些没生效的html片段，也混杂在页面中，你知道，我是一个追求完美的男子……”，玩命牛说到。</p>
 <p>“没想到你小子还挺灵光啊，既然你功夫已经到这层了，那我就告诉你吧，你可以使用浏览器的查看源代码功能，那里就是你输出的html源码！”，欣欣没想到玩命牛进步这么快。</p>
 <p>“ok，我这就去从数据库拿数据了。”，玩命牛依旧激情满满。</p>
-<div class="note_director">本文笔记在<a href="http://localhost/oxnote/notedetail.php?category=php&id=10" target="_blank">这里</a>。</div>
+<div class="note_director">本文笔记在<a href="notedetail-php-10.html" target="_blank.html">这里</a>。</div>

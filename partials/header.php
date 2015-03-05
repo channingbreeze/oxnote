@@ -7,10 +7,10 @@
 		<div class="inner_menu_div">
 			<div class="menu_title">玩命牛的成长记录</div>
 			<ul>
-				<li><a href="index.php">首页</a></li>
-				<li><a href="study.php">学习</a></li>
-				<li><a href="note.php">笔记</a></li>
-				<li><a href="about.php">关于</a></li>
+				<li><a href="index.html">首页</a></li>
+				<li><a href="study.html">学习</a></li>
+				<li><a href="note.html">笔记</a></li>
+				<li><a href="about.html">关于</a></li>
 			</ul>
 <?php 
 	if( !isset($_SESSION) ) {
@@ -23,12 +23,12 @@
 	} else {
 ?>
 			<div class="userInfo">
-				<a href="personal.php" id="userInfo"><?php echo $_SESSION['user']['username']; ?></a>
+				<a href="personal.html" id="userInfo"><?php echo $_SESSION['user']['username']; ?></a>
 				<ul>
 					<?php 
 						if($_SESSION['user']['is_admin']) {
 					?>
-					<li><a href="admin.php">管理后台&nbsp;</a></li>
+					<li><a href="admin.html">管理后台&nbsp;</a></li>
 					<?php
 						} 
 					?>
