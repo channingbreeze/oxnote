@@ -18,13 +18,24 @@
 			<div class="type_info">超文本标记语言（HTML）是网页设计的基础，网页的元素都是由HTML标记组成，故HTML技术是网页设计中不可或缺的技术</div>
 			<a class="type_button" href="notedetail-html-1.html">阅读笔记</a>
 		</li>
-		<!-- <li>
+		<li>
 			<img src="images/php.jpg" />
 			<div class="type_title">超文本预处理器</div>
 			<div class="type_info">超文本预处理器（PHP）是一种通用开源脚本语言，利于学习，使用广泛，主要适用于Web开发领域</div>
 			<a class="type_button" href="notedetail-php-9.html">阅读笔记</a>
-		</li> -->
+		</li>
 	</ul>
+<!-- 	<div class="skills_div block_div">
+	<span class="title_span">实战经验</span>
+	<hr />
+	<ul>
+		<li>
+			<img src="images/petshow.jpg" />
+			<div class="type_title">宠恋秀</div>
+			<div class="type_info">宠恋秀是一个从各方面展示宠物资料，分享宠物信息的个人网站。<a href="#" target="_blank">点此进入</a></div>
+			<a class="type_button" href="notedetail-petshow-15.html">阅读笔记</a>
+		</li>
+	</ul> -->
 	</div>
 </div>
 <?php 
