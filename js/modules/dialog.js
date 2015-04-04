@@ -27,6 +27,9 @@ define(function(require, exports){
 			if(maxHeight < $(window).height()) {
 				maxHeight = $(window).height();
 			}
+			if(maxHeight < document.body.scrollHeight) {
+				maxHeight = document.body.scrollHeight;
+			}
 			$mask.height( maxHeight );
 		};
 		
