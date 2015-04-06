@@ -4,7 +4,7 @@
 <div class="code_div">
 	<pre>
 <?php
-	echo htmlspecialchars(file_get_contents("papers/note/petshow/17petshow/resources/petshow.sql"));
+	echo str_replace("\t", "&nbsp;&nbsp;", htmlspecialchars(file_get_contents("papers/note/petshow/17petshow/resources/petshow.sql")));
 ?>
 	</pre>
 	<div class="G-Clear"></div>

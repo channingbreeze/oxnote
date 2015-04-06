@@ -6,7 +6,7 @@
 <div class="code_div">
 	<pre>
 <?php
-	echo htmlspecialchars(file_get_contents("papers/note/php/12php/resources/case01/put_session.php"));
+	echo str_replace("\t", "&nbsp;&nbsp;", htmlspecialchars(file_get_contents("papers/note/php/12php/resources/case01/put_session.php")));
 ?>
 	</pre>
 	<a class="try_button" href="papers/note/php/12php/resources/case01/put_session.php" target="_blank">check the result</a>
@@ -16,7 +16,7 @@
 <div class="code_div">
 	<pre>
 <?php
-	echo htmlspecialchars(file_get_contents("papers/note/php/12php/resources/case01/get_session.php"));
+	echo str_replace("\t", "&nbsp;&nbsp;", htmlspecialchars(file_get_contents("papers/note/php/12php/resources/case01/get_session.php")));
 ?>
 	</pre>
 	<a class="try_button" href="papers/note/php/12php/resources/case01/get_session.php" target="_blank">check the result</a>
@@ -26,7 +26,7 @@
 <div class="code_div">
 	<pre>
 <?php
-	echo htmlspecialchars(file_get_contents("papers/note/php/12php/resources/case01/clear_session.php"));
+	echo str_replace("\t", "&nbsp;&nbsp;", htmlspecialchars(file_get_contents("papers/note/php/12php/resources/case01/clear_session.php")));
 ?>
 	</pre>
 	<a class="try_button" href="papers/note/php/12php/resources/case01/clear_session.php" target="_blank">check the result</a>
@@ -39,7 +39,7 @@
 <div class="code_div">
 	<pre>
 <?php
-	echo htmlspecialchars(file_get_contents("papers/note/php/12php/resources/case02/login.php"));
+	echo str_replace("\t", "&nbsp;&nbsp;", htmlspecialchars(file_get_contents("papers/note/php/12php/resources/case02/login.php")));
 ?>
 	</pre>
 	<a class="try_button" href="papers/note/php/12php/resources/case02/login.php" target="_blank">check the result</a>
@@ -49,7 +49,7 @@
 <div class="code_div">
 	<pre>
 <?php
-	echo htmlspecialchars(file_get_contents("papers/note/php/12php/resources/case02/register.php"));
+	echo str_replace("\t", "&nbsp;&nbsp;", htmlspecialchars(file_get_contents("papers/note/php/12php/resources/case02/register.php")));
 ?>
 	</pre>
 	<a class="try_button" href="papers/note/php/12php/resources/case02/register.php" target="_blank">check the result</a>
@@ -59,7 +59,7 @@
 <div class="code_div">
 	<pre>
 <?php
-	echo htmlspecialchars(file_get_contents("papers/note/php/12php/resources/case02/welcome.php"));
+	echo str_replace("\t", "&nbsp;&nbsp;", htmlspecialchars(file_get_contents("papers/note/php/12php/resources/case02/welcome.php")));
 ?>
 	</pre>
 	<div class="G-Clear"></div>
@@ -68,7 +68,7 @@
 <div class="code_div">
 	<pre>
 <?php
-	echo htmlspecialchars(file_get_contents("papers/note/php/12php/resources/case02/handler.php"));
+	echo str_replace("\t", "&nbsp;&nbsp;", htmlspecialchars(file_get_contents("papers/note/php/12php/resources/case02/handler.php")));
 ?>
 	</pre>
 	<div class="G-Clear"></div>

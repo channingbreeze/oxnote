@@ -140,8 +140,7 @@
 					<div class="picTitle"><?php echo $picTitle['title'];?></div>
 					<ul>
 						<?php 
-							$sql = "select * from picture where title_id=" . $picTitle['id']
-							 . " order by id desc limit 0,9";
+							$sql = "select * from picture where title_id=" . $picTitle['id'] . " order by id desc limit 0,9";
 							$pictures = $sqlHelper->execute_dql_array($sql);
 							foreach($pictures as $picture) {
 						?>

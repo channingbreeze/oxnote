@@ -1,4 +1,4 @@
-/*build oxnote at 2015-04-04 15:10:51 */
+/*build oxnote at 2015-04-06 16:27:07 */
 .G-Clear {
   clear: both;
 }
@@ -858,6 +858,8 @@ body {
 
 .notedetail_div .right_div .content_div .code_div pre {
   float: left;
+  width: 100%;
+  word-wrap: break-word;
 }
 
 .notedetail_div .right_div .content_div .code_div .try_button {

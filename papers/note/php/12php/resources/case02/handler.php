@@ -30,8 +30,7 @@
 					header("Location: login.php");
 					exit();
 				}
-				$sql = "insert into test (username, passwd) values ('" . 
-						$username . "', '" . $password . "')";
+				$sql = "insert into test (username, passwd) values ('" . $username . "', '" . $password . "')";
 				$res = $sqlHelper->execute_dqm($sql);
 				if($res == 1) {
 					session_start();

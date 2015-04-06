@@ -32,10 +32,7 @@
 	<script>
 		// 0:up 1:left 2:down 3:right
 		var dir = 3;
-		var step = [{dx : 0, dy : -20},
-			{dx : -20, dy : 0},
-			{dx : 0, dy : 20},
-			{dx : 20, dy : 0}];
+		var step = [{dx : 0, dy : -20}, {dx : -20, dy : 0}, {dx : 0, dy : 20}, {dx : 20, dy : 0}];
 		// the snake, a array of div
 		var snake = [];
 		// the snake target
@@ -62,8 +59,7 @@
 				start = 1;
 			}
 			for (var i = start; i<snake.length; i++) {
-				if(parseInt(snake[i].style.left) == newx
-				&& parseInt(snake[i].style.top) == newy) {
+				if(parseInt(snake[i].style.left) == newx && parseInt(snake[i].style.top) == newy) {
 					return true;
 				}
 			}
@@ -102,14 +98,12 @@
 			snake[0].style.left = nextx + 'px';
 			snake[0].style.top = nexty + 'px';
 			// is get food?
-			if(nextx == parseInt(target.style.left) &&
-				nexty == parseInt(target.style.top)) {
+			if(nextx == parseInt(target.style.left) && nexty == parseInt(target.style.top)) {
 				add(parseInt(tailLeft), parseInt(tailTop), 'snake');
 				newTarget();
 			}
 			// snake head meet snake body
-			if(inSnake(parseInt(snake[0].style.left),
-						parseInt(snake[0].style.top), 'body')) {
+			if(inSnake(parseInt(snake[0].style.left), parseInt(snake[0].style.top), 'body')) {
 				clearInterval(timer);
 				window.alert('Game Over!');
 				return;

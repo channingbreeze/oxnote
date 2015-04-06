@@ -230,8 +230,7 @@
 			<div class="blogDiv">
 				<form id="blogForm" action="#" method="post">
 					<input id="blogTitle" type="text" name="title" placeholder="标题"/>
-					<textarea id="blogArticle" name="article" placeholder="正文"
-					 cols="100" rows="30"></textarea>
+					<textarea id="blogArticle" name="article" placeholder="正文" cols="100" rows="30"></textarea>
 					<button id="submitBlog">提交</button>
 				</form>
 			</div>
@@ -251,12 +250,10 @@
 									var picJson = JSON.parse(xhr.responseText);
 									var lis = "";
 									for (var i in picJson.pic) {
-										lis += '<li><img src="' + 
-										picJson.pic[i].path + '" /></li>';
+										lis += '<li><img src="' + picJson.pic[i].path + '" /></li>';
 									}
 									document.getElementById('pics').innerHTML = lis;
-									document.getElementById('picTitle').innerHTML = 
-										picJson.title;
+									document.getElementById('picTitle').innerHTML = picJson.title;
 								}
 							}
 						}
@@ -276,19 +273,13 @@
 									var options = "";
 									for (var i in titlesJson) {
 										if(i == titlesJson.length -1) {
-											options += '<option value="' + 
-											titlesJson[i].id + '" selected>' 
-											+ titlesJson[i].title +
-											  '</option>';
+											options += '<option value="' +  titlesJson[i].id + '" selected>' + titlesJson[i].title + '</option>';
 										} else {
-											options += '<option value="' + 
-											titlesJson[i].id + '">' + 
-											titlesJson[i].title + '</option>';
+											options += '<option value="' + titlesJson[i].id + '">' + titlesJson[i].title + '</option>';
 										}
 									}
 									options += '<option value="-1">添加</option>';
-									document.getElementById('selectPicTitle').innerHTML
-									 = options;
+									document.getElementById('selectPicTitle').innerHTML = options;
 								}
 							}
 						}
@@ -301,8 +292,7 @@
 						// ajax 添加新Title
 						var	xhr = new XMLHttpRequest();
 						xhr.open("POST", "addTitle.php", true);
-						xhr.setRequestHeader("Content-Type",
-								"application/x-www-form-urlencoded");
+						xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
 						xhr.onreadystatechange = function() {
 							if (xhr.readyState == 4) {
 								if (xhr.status == 200) {
@@ -386,8 +376,7 @@
 							}
 						}
 					};
-					xhr.send("title=" + document.getElementById("blogTitle").value
-						+ "&article=" + document.getElementById("blogArticle").value);
+					xhr.send("title=" + document.getElementById("blogTitle").value + "&article=" + document.getElementById("blogArticle").value);
 				}
 			</script>
 		</div>

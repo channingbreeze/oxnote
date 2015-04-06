@@ -17,7 +17,7 @@
 <div class="code_div">
 	<pre>
 <?php
-	echo htmlspecialchars(file_get_contents("papers/note/petshow/20petshow/resources/admin.php"));
+	echo str_replace("\t", "&nbsp;&nbsp;", htmlspecialchars(file_get_contents("papers/note/petshow/20petshow/resources/admin.php")));
 ?>
 	</pre>
 	<a class="try_button" href="papers/note/petshow/20petshow/resources/admin.php" target="_blank">check the result</a>
@@ -27,7 +27,7 @@
 <div class="code_div">
 	<pre>
 <?php
-	echo htmlspecialchars(file_get_contents("papers/note/petshow/20petshow/resources/addTitle.php"));
+	echo str_replace("\t", "&nbsp;&nbsp;", htmlspecialchars(file_get_contents("papers/note/petshow/20petshow/resources/addTitle.php")));
 ?>
 	</pre>
 	<div class="G-Clear"></div>
@@ -36,7 +36,7 @@
 <div class="code_div">
 	<pre>
 <?php
-	echo htmlspecialchars(file_get_contents("papers/note/petshow/20petshow/resources/getPics.php"));
+	echo str_replace("\t", "&nbsp;&nbsp;", htmlspecialchars(file_get_contents("papers/note/petshow/20petshow/resources/getPics.php")));
 ?>
 	</pre>
 	<div class="G-Clear"></div>
@@ -45,7 +45,7 @@
 <div class="code_div">
 	<pre>
 <?php
-	echo htmlspecialchars(file_get_contents("papers/note/petshow/20petshow/resources/uploadBlog.php"));
+	echo str_replace("\t", "&nbsp;&nbsp;", htmlspecialchars(file_get_contents("papers/note/petshow/20petshow/resources/uploadBlog.php")));
 ?>
 	</pre>
 	<div class="G-Clear"></div>
@@ -54,7 +54,7 @@
 <div class="code_div">
 	<pre>
 <?php
-	echo htmlspecialchars(file_get_contents("papers/note/petshow/20petshow/resources/blog.php"));
+	echo str_replace("\t", "&nbsp;&nbsp;", htmlspecialchars(file_get_contents("papers/note/petshow/20petshow/resources/blog.php")));
 ?>
 	</pre>
 	<a class="try_button" href="papers/note/petshow/20petshow/resources/blog.php" target="_blank">check the result</a>
@@ -64,7 +64,7 @@
 <div class="code_div">
 	<pre>
 <?php
-	echo htmlspecialchars(file_get_contents("papers/note/petshow/20petshow/resources/index.php"));
+	echo str_replace("\t", "&nbsp;&nbsp;", htmlspecialchars(file_get_contents("papers/note/petshow/20petshow/resources/index.php")));
 ?>
 	</pre>
 	<a class="try_button" href="papers/note/petshow/20petshow/resources/index.php" target="_blank">check the result</a>
@@ -74,7 +74,7 @@
 <div class="code_div">
 	<pre>
 <?php
-	echo htmlspecialchars(file_get_contents("papers/note/petshow/20petshow/resources/blog_detail.php"));
+	echo str_replace("\t", "&nbsp;&nbsp;", htmlspecialchars(file_get_contents("papers/note/petshow/20petshow/resources/blog_detail.php")));
 ?>
 	</pre>
 	<a class="try_button" href="papers/note/petshow/20petshow/resources/blog_detail.php" target="_blank">check the result</a>
@@ -84,7 +84,7 @@
 <div class="code_div">
 	<pre>
 <?php
-	echo htmlspecialchars(file_get_contents("papers/note/petshow/20petshow/resources/getTitles.php"));
+	echo str_replace("\t", "&nbsp;&nbsp;", htmlspecialchars(file_get_contents("papers/note/petshow/20petshow/resources/getTitles.php")));
 ?>
 	</pre>
 	<div class="G-Clear"></div>

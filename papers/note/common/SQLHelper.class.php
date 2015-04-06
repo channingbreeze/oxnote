@@ -14,8 +14,7 @@ class SQLHelper {
 		if (! $this->conn) {
 			die ( 'Could not connect: ' . mysql_error () );
 		}
-		mysql_select_db ( $this->dbname, $this->conn ) or 
-			die ( 'can not use ' . $this->dbname . ': ' . mysql_error () );
+		mysql_select_db ( $this->dbname, $this->conn ) or die ( 'can not use ' . $this->dbname . ': ' . mysql_error () );
 		mysql_query ( 'set names utf8', $this->conn ) or die ( 'can not set utf8: ' . mysql_error () );
 	}
 	

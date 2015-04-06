@@ -2,7 +2,7 @@
 <div class="code_div">
 	<pre>
 <?php
-	echo htmlspecialchars(file_get_contents("papers/note/petshow/16petshow/resources/index.php"));
+	echo str_replace("\t", "&nbsp;&nbsp;", htmlspecialchars(file_get_contents("papers/note/petshow/16petshow/resources/index.php")));
 ?>
 	</pre>
 	<a class="try_button" href="papers/note/petshow/16petshow/resources/index.php" target="_blank">check the result</a>
@@ -14,7 +14,7 @@
 <div class="code_div">
 	<pre>
 <?php
-	echo htmlspecialchars(file_get_contents("papers/note/petshow/16petshow/resources/pic.php"));
+	echo str_replace("\t", "&nbsp;&nbsp;", htmlspecialchars(file_get_contents("papers/note/petshow/16petshow/resources/pic.php")));
 ?>
 	</pre>
 	<a class="try_button" href="papers/note/petshow/16petshow/resources/pic.php" target="_blank">check the result</a>
@@ -24,7 +24,7 @@
 <div class="code_div">
 	<pre>
 <?php
-	echo htmlspecialchars(file_get_contents("papers/note/petshow/16petshow/resources/blog.php"));
+	echo str_replace("\t", "&nbsp;&nbsp;", htmlspecialchars(file_get_contents("papers/note/petshow/16petshow/resources/blog.php")));
 ?>
 	</pre>
 	<a class="try_button" href="papers/note/petshow/16petshow/resources/blog.php" target="_blank">check the result</a>
@@ -34,7 +34,7 @@
 <div class="code_div">
 	<pre>
 <?php
-	echo htmlspecialchars(file_get_contents("papers/note/petshow/16petshow/resources/blog_detail.php"));
+	echo str_replace("\t", "&nbsp;&nbsp;", htmlspecialchars(file_get_contents("papers/note/petshow/16petshow/resources/blog_detail.php")));
 ?>
 	</pre>
 	<a class="try_button" href="papers/note/petshow/16petshow/resources/blog_detail.php" target="_blank">check the result</a>
@@ -44,7 +44,7 @@
 <div class="code_div">
 	<pre>
 <?php
-	echo htmlspecialchars(file_get_contents("papers/note/petshow/16petshow/resources/admin.php"));
+	echo str_replace("\t", "&nbsp;&nbsp;", htmlspecialchars(file_get_contents("papers/note/petshow/16petshow/resources/admin.php")));
 ?>
 	</pre>
 	<a class="try_button" href="papers/note/petshow/16petshow/resources/admin.php" target="_blank">check the result</a>

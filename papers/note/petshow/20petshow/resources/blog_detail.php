@@ -105,9 +105,8 @@
 			</div>
 		</div>
 <?php 
-
-require_once dirname ( __FILE__ ) . '/../../common/SQLHelper.class.php';
-$sqlHelper = new SQLHelper();
+	require_once dirname ( __FILE__ ) . '/../../common/SQLHelper.class.php';
+	$sqlHelper = new SQLHelper();
 
 	if(!isset($_GET['blogId'])) {
 		$title = "no such blog";

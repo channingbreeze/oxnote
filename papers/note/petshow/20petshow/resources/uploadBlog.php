@@ -9,8 +9,7 @@
 		$short = str_replace("\n", " ", $short);
 		$short = $short . "...";
 		$sqlHelper = new SQLHelper();
-		$sql = "insert into blog (title, short_content, content) values ('" . $title . "', '" . $short
-		 . "', '" . $article . "')";
+		$sql = "insert into blog (title, short_content, content) values ('" . $title . "', '" . $short . "', '" . $article . "')";
 		if(1 == $sqlHelper->execute_dqm($sql)) {
 			echo "true";
 		} else {
