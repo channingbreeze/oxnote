@@ -1,6 +1,6 @@
 (function(){
 
-	var OXNOTE = 'http://localhost/oxnote';
+	var OXNOTE = 'http://www.calfnote.com';
 
 	seajs.config({
 	

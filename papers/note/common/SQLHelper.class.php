@@ -4,7 +4,7 @@ class SQLHelper {
 	
 	private $conn;
 	private $username = "root";
-	private $password = "";
+	private $password = "91af67c972";
 	private $dbname = "mynote";
 	private $host = "localhost";
 	
