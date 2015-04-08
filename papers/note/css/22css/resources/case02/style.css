@@ -1,0 +1,52 @@
+.flag {
+	position : relative;
+}
+.circle {
+	list-style-type : none;
+	width : 80px;
+	height : 80px;
+	border : 10px solid;
+	border-radius : 50px;
+	position : absolute;
+	top : 0px;
+	left : 0px;
+}
+.blue {
+	border-color : blue;
+}
+.yellow {
+	border-color : yellow;
+	top : 50px;
+	left : 55px;
+}
+.black {
+	border-color : black;
+	top : 0px;
+	left : 110px;
+}
+.green {
+	border-color : green;
+	top : 50px;
+	left : 165px;
+}
+.red {
+	border-color : red;
+	top : 0px;
+	left : 220px;
+}
+.blueRightBorder {
+	z-index : 4;
+	border-bottom-color : transparent;
+}
+.yellowTopBorder {
+	z-index : 3;
+	border-right-color : transparent;
+}
+.blackRightBorder {
+	z-index : 2;
+	border-bottom-color : transparent;
+}
+.greenTopBorder {
+	z-index : 1;
+	border-right-color : transparent;
+}

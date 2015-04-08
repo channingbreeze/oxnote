@@ -31,18 +31,18 @@
 			<a class="type_button" href="notedetail-css-21.html">阅读笔记</a>
 		</li> -->
 	</ul>
- 	<!-- <div class="skills_div block_div">
+ 	<div class="skills_div block_div">
 	<span class="title_span">实战经验</span>
 	<hr />
 	<ul>
 		<li>
 			<img src="images/petshow.jpg" />
 			<div class="type_title">宠恋秀</div>
-			<div class="type_info">宠恋秀是一个从各方面展示宠物资料，分享宠物信息的个人网站。<a href="#" target="_blank">点此进入</a></div>
+			<div class="type_info">宠恋秀是一个从各方面展示宠物资料，分享宠物信息的个人网站。<a href="http://petshow.webxinxin.com/" target="_blank">点此进入</a></div>
 			<a class="type_button" href="notedetail-petshow-15.html">阅读笔记</a>
 		</li>
 	</ul>
-	</div> -->
+	</div>
 </div>
 <?php 
 	include_once 'partials/footer.php';

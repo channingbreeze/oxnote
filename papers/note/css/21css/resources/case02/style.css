@@ -1,0 +1,45 @@
+* {
+	margin : 0px;
+	padding : 0px;
+}
+.menuBanner {
+	width : 100%;
+	height : 50px;
+	background-color : pink;
+}
+.menuItem {
+	list-style-type : none;
+	float : left;
+	width : 20%;
+	height : 100%;
+}
+.mainMenu {
+	font-size : 25px;
+	line-height : 50px;
+	text-align : center;
+	width : 90%;
+	margin : 0px auto;
+	background-color : red;
+	cursor : pointer;
+}
+.subMenu {
+	display : none;
+}
+.menuItem:hover .subMenu {
+	width : 90%;
+	margin : 0px auto;
+	display : block;
+}
+.subMenuItem {
+	height : 50px;
+	background : black;
+	border-bottom : 1px solid white;
+	text-align : center;
+	list-style-type : none;
+}
+.subMenuItem a {
+	color : white;
+	font-size : 25px;
+	line-height : 50px;
+	text-decoration : none;
+}
