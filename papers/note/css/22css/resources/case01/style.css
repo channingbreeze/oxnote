@@ -1,0 +1,15 @@
+.box1 {
+	width : 100px;
+	height : 100px;
+	background-color : pink;
+	border-radius : 20px;
+}
+.box2 {
+	width : 100px;
+	height : 100px;
+	background-color : pink;
+	border-top-right-radius : 10px;
+	border-bottom-right-radius : 20px;
+	border-bottom-left-radius : 30px;
+	border-top-left-radius : 40px;
+}

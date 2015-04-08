@@ -1,0 +1,27 @@
+.shadowBox {
+	width : 100px;
+	height : 100px;
+	background-color : pink;
+	box-shadow : 10px 10px 20px black;
+}
+.multiShadowBox {
+	width : 100px;
+	height : 100px;
+	margin-top : 30px;
+	background-color : pink;
+	box-shadow : 2px 2px 10px red, 10px 10px 20px black;
+}
+.spreadShadowBox {
+	width : 100px;
+	height : 100px;
+	margin-top : 30px;
+	background-color : pink;
+	box-shadow : 10px 10px 20px 10px black;
+}
+.innerShadowBox {
+	width : 100px;
+	height : 100px;
+	margin-top : 30px;
+	background-color : pink;
+	box-shadow : inset 0px 0px 20px 5px black;
+}
