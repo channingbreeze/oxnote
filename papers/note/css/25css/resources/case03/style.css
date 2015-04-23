@@ -1,0 +1,38 @@
+@font-face {
+    font-family: 'naughty_cartoonsregular';
+    src: url('Naughty Cartoons-webfont.eot');
+    src: url('Naughty Cartoons-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Naughty Cartoons-webfont.woff2') format('woff2'),
+         url('Naughty Cartoons-webfont.woff') format('woff'),
+         url('Naughty Cartoons-webfont.ttf') format('truetype'),
+         url('Naughty Cartoons-webfont.svg#naughty_cartoonsregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+.mirror {
+	font-family : 'naughty_cartoonsregular';
+	position : relative;
+	color : red;
+	opacity : 0.7;
+}
+.mirror:before {
+	content : attr(title);
+	position : absolute;
+	top : 100%;
+	transform : scale(1, -1); /*chrome firefox opera ie*/
+	-ms-transform : scale(1, -1); /*ie*/
+	-moz-transform : scale(1, -1); /*firefox*/
+	-webkit-transform : scale(1, -1); /*chrome 360 sogou baidu safari opera*/
+	-o-transform : scale(1, -1); /*baidu*/
+}
+.mirror:after {
+	content : '';
+	background : -moz-linear-gradient(top, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
+	background : -webkit-linear-gradient(top, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
+	background : -ms-linear-gradient(top, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
+	width : 100%;
+	height : 100%;
+	position : absolute;
+	top : 100%;
+	left : 0px;
+}

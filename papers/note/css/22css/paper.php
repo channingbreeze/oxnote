@@ -4,7 +4,7 @@
 <div class="code_div">
 	<pre>
 <?php
-	echo str_replace("\t", "&nbsp;&nbsp;&nbsp;&nbsp;", htmlspecialchars(file_get_contents("papers/note/css/22css/resources/case01/index.html")));
+	echo str_replace("\t", "&nbsp;&nbsp;", htmlspecialchars(file_get_contents("papers/note/css/22css/resources/case01/index.html")));
 ?>
 	</pre>
 	<a class="try_button" href="papers/note/css/22css/resources/case01/index.html" target="_blank">check the result</a>
@@ -14,7 +14,7 @@
 <div class="code_div">
 	<pre>
 <?php
-	echo str_replace("\t", "&nbsp;&nbsp;&nbsp;&nbsp;", htmlspecialchars(file_get_contents("papers/note/css/22css/resources/case01/style.css")));
+	echo str_replace("\t", "&nbsp;&nbsp;", htmlspecialchars(file_get_contents("papers/note/css/22css/resources/case01/style.css")));
 ?>
 	</pre>
 	<div class="G-Clear"></div>
@@ -25,7 +25,7 @@
 <div class="code_div">
 	<pre>
 <?php
-	echo str_replace("\t", "&nbsp;&nbsp;&nbsp;&nbsp;", htmlspecialchars(file_get_contents("papers/note/css/22css/resources/case02/index.html")));
+	echo str_replace("\t", "&nbsp;&nbsp;", htmlspecialchars(file_get_contents("papers/note/css/22css/resources/case02/index.html")));
 ?>
 	</pre>
 	<a class="try_button" href="papers/note/css/22css/resources/case02/index.html" target="_blank">check the result</a>
@@ -35,7 +35,7 @@
 <div class="code_div">
 	<pre>
 <?php
-	echo str_replace("\t", "&nbsp;&nbsp;&nbsp;&nbsp;", htmlspecialchars(file_get_contents("papers/note/css/22css/resources/case02/style.css")));
+	echo str_replace("\t", "&nbsp;&nbsp;", htmlspecialchars(file_get_contents("papers/note/css/22css/resources/case02/style.css")));
 ?>
 	</pre>
 	<div class="G-Clear"></div>
@@ -46,7 +46,7 @@
 <div class="code_div">
 	<pre>
 <?php
-	echo str_replace("\t", "&nbsp;&nbsp;&nbsp;&nbsp;", htmlspecialchars(file_get_contents("papers/note/css/22css/resources/case03/index.html")));
+	echo str_replace("\t", "&nbsp;&nbsp;", htmlspecialchars(file_get_contents("papers/note/css/22css/resources/case03/index.html")));
 ?>
 	</pre>
 	<a class="try_button" href="papers/note/css/22css/resources/case03/index.html" target="_blank">check the result</a>
@@ -56,7 +56,7 @@
 <div class="code_div">
 	<pre>
 <?php
-	echo str_replace("\t", "&nbsp;&nbsp;&nbsp;&nbsp;", htmlspecialchars(file_get_contents("papers/note/css/22css/resources/case03/style.css")));
+	echo str_replace("\t", "&nbsp;&nbsp;", htmlspecialchars(file_get_contents("papers/note/css/22css/resources/case03/style.css")));
 ?>
 	</pre>
 	<div class="G-Clear"></div>
@@ -67,7 +67,7 @@
 <div class="code_div">
 	<pre>
 <?php
-	echo str_replace("\t", "&nbsp;&nbsp;&nbsp;&nbsp;", htmlspecialchars(file_get_contents("papers/note/css/22css/resources/case04/index.html")));
+	echo str_replace("\t", "&nbsp;&nbsp;", htmlspecialchars(file_get_contents("papers/note/css/22css/resources/case04/index.html")));
 ?>
 	</pre>
 	<a class="try_button" href="papers/note/css/22css/resources/case04/index.html" target="_blank">check the result</a>
@@ -77,7 +77,7 @@
 <div class="code_div">
 	<pre>
 <?php
-	echo str_replace("\t", "&nbsp;&nbsp;&nbsp;&nbsp;", htmlspecialchars(file_get_contents("papers/note/css/22css/resources/case04/style.css")));
+	echo str_replace("\t", "&nbsp;&nbsp;", htmlspecialchars(file_get_contents("papers/note/css/22css/resources/case04/style.css")));
 ?>
 	</pre>
 	<div class="G-Clear"></div>

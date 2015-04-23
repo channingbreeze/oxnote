@@ -1,0 +1,31 @@
+@font-face {
+    font-family: 'naughty_cartoonsregular';
+    src: url('Naughty Cartoons-webfont.eot');
+    src: url('Naughty Cartoons-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Naughty Cartoons-webfont.woff2') format('woff2'),
+         url('Naughty Cartoons-webfont.woff') format('woff'),
+         url('Naughty Cartoons-webfont.ttf') format('truetype'),
+         url('Naughty Cartoons-webfont.svg#naughty_cartoonsregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'open_sanslight';
+    src: url('OpenSans-Light-webfont.eot');
+    src: url('OpenSans-Light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('OpenSans-Light-webfont.woff2') format('woff2'),
+         url('OpenSans-Light-webfont.woff') format('woff'),
+         url('OpenSans-Light-webfont.ttf') format('truetype'),
+         url('OpenSans-Light-webfont.svg#open_sanslight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+.NaughtyFont {
+	font-family : 'naughty_cartoonsregular';
+	font-size : 50px;
+}
+.OpenFont {
+	font-family : 'open_sanslight';
+	font-size : 50px;
+	color : red;
+}

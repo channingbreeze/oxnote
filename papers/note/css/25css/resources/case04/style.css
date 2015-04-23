@@ -1,0 +1,8 @@
+.normal:before {
+	content : 'before';
+	color : red;
+}
+.normal:after {
+	content : 'after';
+	color : blue;
+}

@@ -1,0 +1,31 @@
+* {
+	margin : 0px;
+	padding : 0px;
+}
+li {
+	list-style-type : none;
+	width : 100px;
+	height : 100px;
+	float : left;
+}
+li[id] {
+	background-color : pink;
+}
+li[id="1"] {
+	background-color : red;
+}
+li[id~="a"] {
+	font-size : 30px;
+}
+li[id^="1"] {
+	color : green;
+}
+li[id$="b"] {
+	text-align : center;
+}
+li[id*=" "] {
+	line-height : 100px;
+}
+li[id|="c"] {
+	background-color : yellow;
+}

@@ -1,0 +1,14 @@
+.ellipseRadial {
+	width : 200px;
+	height : 100px;
+	background : -moz-radial-gradient(center, ellipse, #ccc, #000);
+	background : -webkit-radial-gradient(center, ellipse, #ccc, #000);
+	background : -ms-radial-gradient(center, ellipse, #ccc, #000);
+}
+.multiRadial {
+	width : 400px;
+	height : 400px;
+	background : -moz-radial-gradient(center, red, blue, green, pink, black);
+	background : -webkit-radial-gradient(center, red, blue, green, pink, black);
+	background : -ms-radial-gradient(center, red, blue, green, pink, black);
+}

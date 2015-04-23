@@ -1,0 +1,22 @@
+input[type="checkbox"] {
+	position : relative;
+	z-index : 1;
+	width : 18px;
+	height : 18px;
+	opacity : 0;
+}
+input[type="checkbox"] + span {
+	padding-left : 20px;
+	margin-left : -20px;
+	background : url("icon_uncheck.png") no-repeat;
+	position : relative;
+	left : -2px;
+	top : -4px;
+	font-size : 13px;
+	line-height : 20px;
+	display : inline-block;
+	height : 20px;
+}
+input[type="checkbox"]:checked + span {
+	background : url("icon_check.png") no-repeat;
+}

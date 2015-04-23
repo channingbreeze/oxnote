@@ -1,0 +1,34 @@
+.normal {
+	width : 100px;
+	height : 100px;
+	background : red;
+	margin-left : 100px;
+}
+.translate {
+	transform : translate(100px, 0); /*chrome firefox opera ie*/
+	-ms-transform : translate(100px, 0); /*ie*/
+	-moz-transform : translate(100px, 0); /*firefox*/
+	-webkit-transform : translate(100px, 0); /*chrome 360 sogou baidu safari opera*/
+	-o-transform : translate(100px, 0); /*baidu*/
+}
+.rotate {
+	transform : rotate(45deg); /*chrome firefox opera ie*/
+	-ms-transform : rotate(45deg); /*ie*/
+	-moz-transform : rotate(45deg); /*firefox*/
+	-webkit-transform : rotate(45deg); /*chrome 360 sogou baidu safari opera*/
+	-o-transform : rotate(45deg); /*baidu*/
+}
+.scale {
+	transform : scale(2, 0.5); /*chrome firefox opera ie*/
+	-ms-transform : scale(2, 0.5); /*ie*/
+	-moz-transform : scale(2, 0.5); /*firefox*/
+	-webkit-transform : scale(2, 0.5); /*chrome 360 sogou baidu safari opera*/
+	-o-transform : scale(2, 0.5); /*baidu*/
+}
+.skew {
+	transform : skew(45deg, 0deg); /*chrome firefox opera ie*/
+	-ms-transform : skew(45deg, 0deg); /*ie*/
+	-moz-transform : skew(45deg, 0deg); /*firefox*/
+	-webkit-transform : skew(45deg, 0deg); /*chrome 360 sogou baidu safari opera*/
+	-o-transform : skew(45deg, 0deg); /*baidu*/
+}

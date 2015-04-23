@@ -1,0 +1,18 @@
+div {
+	margin-top : 40px;
+}
+.div1{
+	-moz-column-count : 2;
+	-webkit-column-count : 2;
+}
+.div2{
+	border : 6px solid orange;
+	padding : 6px;
+	text-align : justify;
+	-moz-column-width : 20em;
+	-moz-column-gap : 3em;
+	-moz-column-rule : 6px solid blue;
+	-webkit-column-width : 20em;
+	-webkit-column-gap : 5em;
+	-webkit-column-rule : 6px solid blue;
+}

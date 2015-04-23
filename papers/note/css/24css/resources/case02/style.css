@@ -1,0 +1,14 @@
+.angleLinear {
+	width : 100px;
+	height : 100px;
+	background : -moz-linear-gradient(20deg, #ccc, #000);
+	background : -webkit-linear-gradient(20deg, #ccc, #000);
+	background : -ms-linear-gradient(20deg, #ccc, #000);
+}
+.multiLinear {
+	width : 500px;
+	height : 100px;
+	background : -moz-linear-gradient(0deg, red, blue, green, pink, black);
+	background : -webkit-linear-gradient(0deg, red, blue, green, pink, black);
+	background : -ms-linear-gradient(0deg, red, blue, green, pink, black);
+}

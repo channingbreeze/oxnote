@@ -1,0 +1,10 @@
+.baseRadial {
+	width : 100px;
+	height : 100px;
+	background : -moz-radial-gradient(center, #ccc, #000); /*firefox*/
+	background : -webkit-gradient(radial, center center, center center, from(#ccc), to(#000)); /*chrome,360,sougo,baidu,safari,opera*/
+	background : -webkit-radial-gradient(center, #ccc, #000); /*chrome,360,sougo,baidu,safari,opera*/
+	background : -o-radial-gradient(center, #ccc, #000); /*(none)*/
+	background : -ms-radial-gradient(center, #ccc, #000); /*ie*/
+	background : radial-gradient(center, #ccc, #000); /*none*/
+}
