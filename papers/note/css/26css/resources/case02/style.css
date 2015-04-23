@@ -1,0 +1,111 @@
+@keyframes bubble {
+	0% {
+		background-color : blue;
+		transform : scale(1, 1);
+	}
+	10% {
+		background-color : red;
+		transform : scale(1.8, 1.8);
+	}
+	50% {
+		background-color : blue;
+		transform : scale(2, 2);
+	}
+	90% {
+		background-color : red;
+		transform : scale(1.8, 1.8);
+	}
+	100% {
+		background-color : blue;
+		transform : scale(1, 1);
+	}
+}
+@-webkit-keyframes bubble {
+	0% {
+		background-color : blue;
+		-webkit-transform : scale(1, 1);
+	}
+	10% {
+		background-color : red;
+		-webkit-transform : scale(1.8, 1.8);
+	}
+	50% {
+		background-color : blue;
+		-webkit-transform : scale(2, 2);
+	}
+	90% {
+		background-color : red;
+		-webkit-transform : scale(1.8, 1.8);
+	}
+	100% {
+		background-color : blue;
+		-webkit-transform : scale(1, 1);
+	}
+}
+@-moz-keyframes bubble {
+	0% {
+		background-color : blue;
+		-moz-transform : scale(1, 1);
+	}
+	10% {
+		background-color : red;
+		-moz-transform : scale(1.8, 1.8);
+	}
+	50% {
+		background-color : blue;
+		-moz-transform : scale(2, 2);
+	}
+	90% {
+		background-color : red;
+		-moz-transform : scale(1.8, 1.8);
+	}
+	100% {
+		background-color : blue;
+		-moz-transform : scale(1, 1);
+	}
+}
+@-o-keyframes bubble {
+	0% {
+		background-color : blue;
+		-o-transform : scale(1, 1);
+	}
+	10% {
+		background-color : red;
+		-o-transform : scale(1.8, 1.8);
+	}
+	50% {
+		background-color : blue;
+		-o-transform : scale(2, 2);
+	}
+	90% {
+		background-color : red;
+		-o-transform : scale(1.8, 1.8);
+	}
+	100% {
+		background-color : blue;
+		-o-transform : scale(1, 1);
+	}
+}
+.circle {
+	width: 100px;
+	height: 100px;
+	margin: 100px;
+	border-radius: 50px;
+	background-color: red;
+	animation-name: bubble;
+	animation-duration: 2s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	-webkit-animation-name: bubble;
+	-webkit-animation-duration: 2s;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-iteration-count: infinite;
+	-o-animation-name: bubble;
+	-o-animation-duration: 2s;
+	-o-animation-timing-function: linear;
+	-o-animation-iteration-count: infinite;
+	-moz-animation-name: bubble;
+	-moz-animation-duration: 2s;
+	-moz-animation-timing-function: linear;
+	-moz-animation-iteration-count: infinite;
+}

@@ -1,0 +1,20 @@
+@media (max-width:800px) {
+	.mydiv {
+		margin : 100px;
+		background-color : gray;
+	}
+}
+@media (min-width:800px) and (max-width:1200px) {
+	.mydiv {
+		margin : 100px;
+		background-color : black;
+		color : white;
+	}
+}
+@media (min-width:1200px) {
+	.mydiv {
+		margin : 100px;
+		background-color : pink;
+		border : 1px solid red;
+	}
+}

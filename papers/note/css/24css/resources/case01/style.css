@@ -1,0 +1,10 @@
+.baseLinear {
+	width : 100px;
+	height : 100px;
+	background : -moz-linear-gradient(center, #ccc, #000); /*firefox*/
+	background : -webkit-gradient(linear, center top, center bottom, from(#ccc), to(#000)); /*chrome,360,sougo,baidu,safari,opera*/
+	background : -webkit-linear-gradient(top, #ccc, #000); /*chrome,360,sougo,baidu,safari,opera*/
+	background : -o-linear-gradient(top, #ccc, #000); /*(none)*/
+	background : -ms-linear-gradient(top, #ccc, #000); /*ie*/
+	background : linear-gradient(top, #ccc, #000); /*none*/
+}
