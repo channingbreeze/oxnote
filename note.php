@@ -41,6 +41,12 @@
 			<div class="type_info">宠恋秀是一个从各方面展示宠物资料，分享宠物信息的个人网站。<a href="http://petshow.webxinxin.com/" target="_blank">点此进入</a></div>
 			<a class="type_button" href="notedetail-petshow-15.html">阅读笔记</a>
 		</li>
+		<li>
+			<img src="images/susliks.jpg" />
+			<div class="type_title">打地鼠</div>
+			<div class="type_info">打地鼠是一个纯CSS实现的小游戏，没有使用图片和javascript代码。<a href="http://susliks.webxinxin.com/" target="_blank">点此进入</a></div>
+			<a class="type_button" href="notedetail-susliks-31.html">阅读笔记</a>
+		</li>
 	</ul>
 	</div>
 </div>

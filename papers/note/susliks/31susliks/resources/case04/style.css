@@ -1,0 +1,175 @@
+* {
+	padding : 0px;
+	margin : 0px;
+	box-sizing: border-box;
+}
+.container {
+	position : absolute;
+	left : 50%;
+	top : 50%;
+	width : 600px;
+	height : 600px;
+	margin-left : -300px;
+	margin-top : -300px;
+	border : 1px solid black;
+	overflow : hidden;
+	background: -webkit-linear-gradient(top, #8adcf7 0%, #bbe8fd 100%);
+	background: linear-gradient(to bottom, #8adcf7 0%, #bbe8fd 100%);
+}
+.susliks {
+	position : relative;
+	left : 0px;
+	top : 6px;
+	margin : 0px auto;
+	width : 56px;
+	height : 100px;
+	border-radius : 20px;
+	background : #e3c498;
+	background-image : -webkit-radial-gradient(20px 23px, circle, #000000 5%, rgba(255, 255, 255, 0) 5%),
+						 -webkit-radial-gradient(17px 20px, circle, #ffffff 10%, rgba(255, 255, 255, 0) 10%),
+						 -webkit-radial-gradient(36px 23px, circle, #000000 5%, rgba(255, 255, 255, 0) 5%),
+						 -webkit-radial-gradient(39px 20px, circle, #ffffff 10%, rgba(255, 255, 255, 0) 10%),
+						 -webkit-radial-gradient(center 36px, circle, #000000 8%, rgba(255, 255, 255, 0) 8%),
+						 -webkit-radial-gradient(center 48px, circle, #ffffff 20%, rgba(255, 255, 255, 0) 20%);
+	background-image : radial-gradient(circle at 20px 23px, #000000 5%, rgba(255, 255, 255, 0) 5%),
+						 radial-gradient(circle at 17px 20px, #ffffff 10%, rgba(255, 255, 255, 0) 10%),
+						 radial-gradient(circle at 36px 23px, #000000 5%, rgba(255, 255, 255, 0) 5%),
+						 radial-gradient(circle at 39px 20px, #ffffff 10%, rgba(255, 255, 255, 0) 10%),
+						 radial-gradient(circle at center 36px, #000000 8%, rgba(255, 255, 255, 0) 8%),
+						 radial-gradient(circle at center 48px, #ffffff 20%, rgba(255, 255, 255, 0) 20%);
+}
+.susliks:before, .susliks:after {
+	content : '';
+	left : -5px;
+	top : -5px;
+	width : 20px;
+	height : 20px;
+	position : absolute;
+	background : #e3c498;
+	border-radius : 50%;
+	background-image : -webkit-radial-gradient(center, circle, #000000 40%, rgba(255, 255, 255, 0) 40%);
+	background-image : radial-gradient(circle at center, #000000 40%, rgba(255, 255, 255, 0) 40%);
+}
+.susliks:after {
+	left : auto;
+	right : -5px;
+}
+.hole {
+	position : absolute;
+	left : 0px;
+	top : 70px;
+	width : 68px;
+	height : 100px;
+	background-image : -webkit-linear-gradient(left, #2a7d2f 0%, #78fc73 25%, #78fc73 35%, #113e15 95%);
+	background-image : linear-gradient(to right, #2a7d2f 0%, #78fc73 25%, #78fc73 35%, #113e15 95%);
+	border-left : 1px solid #236d22;
+	box-shadow : 0px 2px 5px 0px rgba(0, 0, 0, 0.6);
+}
+.hole:before {
+	display : block;
+	content : '';
+	position : absolute;
+	width : 84px;
+	height : 24px;
+	margin-left : -8px;
+	top : -24px;
+	background-image : -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 1px, rgba(255, 255, 255, 0.3) 2px,
+												 rgba(255, 255, 255, 0.3) 3px, rgba(255, 255, 255, 0) 4px ),
+					-webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.4) 3px, rgba(255, 255, 255, 0.2) 5px,
+												 rgba(255, 255, 255, 0) 6px ),
+					-webkit-linear-gradient(left, #2a7d2f 0%, #78fc73 25%, #78fc73 35%, #113e15 95%);
+	background-image : linear-gradient(to bottom, rgba(255, 255, 255, 0) 1px, rgba(255, 255, 255, 0.3) 2px,
+												 rgba(255, 255, 255, 0.3) 3px, rgba(255, 255, 255, 0) 4px ),
+					linear-gradient(to top, rgba(0, 0, 0, 0.4) 3px, rgba(255, 255, 255, 0.2) 5px,
+												 rgba(255, 255, 255, 0) 6px ),
+					linear-gradient(to right, #2a7d2f 0%, #78fc73 25%, #78fc73 35%, #113e15 95%);
+}
+.time-wrapper  {
+	position: absolute;
+	left: 20px;
+	top: 20px;
+}
+.time-wrapper p {
+	color: #fff;
+	line-height: 24px;
+}
+.time {
+	border: 2px solid #fff;
+	width: 140px;
+	height: 20px;
+}
+.time .progress {
+	height: 16px;
+	width: 0;
+}
+.mapGroup  {
+	position: absolute;
+	bottom: 0;
+	left: -600px;
+	width: 1800px;
+	height: 800px;
+	-webkit-transform: perspective(600px) rotateX(45deg);
+	transform: perspective(600px) rotateX(45deg);
+	-webkit-transform-origin: center bottom;
+	-ms-transform-origin: center bottom;
+	transform-origin: center bottom;
+}
+.map  {
+	width: 5%;
+	height: 100%;
+	float: left;
+}
+.map:nth-child(2n) {
+	background: #62b210;
+}
+.map:nth-child(2n+1) {
+	background: #51a70d;
+}
+.group {
+	position: absolute;
+	width : 68px;
+}
+.group:nth-child(1) {
+	left: 45px;
+	top: 210px;
+}
+.group:nth-child(2) {
+	left: 165px;
+	top: 270px;
+}
+.group:nth-child(3) {
+	left: 345px;
+	top: 250px;
+}
+.group:nth-child(4) {
+	left: 80px;
+	top: 370px;
+}
+.group:nth-child(5) {
+	left: 400px;
+	top: 410px;
+}
+.group:nth-child(6)  {
+	left: 470px;
+	top: 230px;
+}
+.points {
+	position: absolute;
+	top: 20px;
+	left: 50%;
+	width: 100px;
+	height: 48px;
+	margin-left: -50px;
+	background: rgba(0, 0, 0, 0.2);
+	border: 4px solid #ffffff;
+	border-radius: 4px;
+	color: #fff;
+}
+.point {
+	display: block;
+	height: 40px;
+	text-align: center;
+	font-size: 30px;
+	font-weight: bold;
+	cursor: default;
+}
