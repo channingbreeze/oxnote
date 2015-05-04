@@ -1,0 +1,108 @@
+.container {
+	position : absolute;
+	top : 100px;
+	left : -50px;
+	width : 100px;
+	height : 40px;
+	margin-left : 50%;
+	background-color : pink;
+	overflow : hidden;
+}
+.block {
+	width : 100px;
+	height : 40px;
+	background-color : red;
+	transition : all 0.5s linear 0s;
+	-webkit-transition : all 0.5s linear 0s;
+}
+.point {
+	width : 100px;
+	height : 40px;
+	line-height : 40px;
+	text-align : center;
+	font-size : 30px;
+	color : white;
+	background-color : blue;
+}
+.points {
+	margin-top : -80px;
+}
+.points input[type="radio"] {
+	opacity : 1;
+	position : absolute;
+	top : -1000px;
+	left : 0px;
+}
+.points input[type="radio"]:checked + .block{
+	height : 0px;
+}
+.labels input[type="radio"] {
+	position : absolute;
+	top : -1000px;
+	left : 0px;
+}
+.labels label {
+	display : block;
+	width: 100px;
+	height: 100px;
+	margin-left : 100px;
+	margin-top : 100px;
+	background-color : red;
+	border-radius : 50px;
+	line-height : 100px;
+	text-align : center;
+}
+.labels input[type="radio"]:checked + label {
+	animation-name: bubble;
+	animation-duration: 2s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	-webkit-animation-name: bubble;
+	-webkit-animation-duration: 2s;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-iteration-count: infinite;
+}
+@keyframes bubble {
+	0% {
+		background-color : blue;
+		transform : scale(1, 1);
+	}
+	10% {
+		background-color : red;
+		transform : scale(1.8, 1.8);
+	}
+	50% {
+		background-color : blue;
+		transform : scale(2, 2);
+	}
+	90% {
+		background-color : red;
+		transform : scale(1.8, 1.8);
+	}
+	100% {
+		background-color : blue;
+		transform : scale(1, 1);
+	}
+}
+@-webkit-keyframes bubble {
+	0% {
+		background-color : blue;
+		-webkit-transform : scale(1, 1);
+	}
+	10% {
+		background-color : red;
+		-webkit-transform : scale(1.8, 1.8);
+	}
+	50% {
+		background-color : blue;
+		-webkit-transform : scale(2, 2);
+	}
+	90% {
+		background-color : red;
+		-webkit-transform : scale(1.8, 1.8);
+	}
+	100% {
+		background-color : blue;
+		-webkit-transform : scale(1, 1);
+	}
+}

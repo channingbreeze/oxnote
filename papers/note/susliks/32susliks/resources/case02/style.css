@@ -1,0 +1,28 @@
+input[type="checkbox"] {
+	opacity : 0;
+}
+.div {
+	width : 100px;
+	height : 100px;
+	margin-top : 10px;
+	background-color : red;
+}
+input[type="checkbox"]:checked ~ .div{
+	background-color : blue;
+}
+.label {
+	width : 100px;
+	height : 30px;
+	margin-top : 10px;
+}
+.label label {
+	width : 100%;
+	height : 100%;
+	line-height : 30px;
+	border-radius : 5px;
+	background-color : black;
+	color : white;
+	display : block;
+	text-align : center;
+	cursor : pointer;
+}
