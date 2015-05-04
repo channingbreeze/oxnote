@@ -1,12 +1,12 @@
 <p>CSS全称叫做层叠样式表，是专门用来描述样式的语言，其实我们可以直接把style的东西写在一个新的文件中，叫做style.css，然后通过link去引用。看一个简单的例子：</p>
-<p>index.html：</p>
+<p>test.html：</p>
 <div class="code_div">
 	<pre>
 <?php
-	echo str_replace("\t", "&nbsp;&nbsp;", htmlspecialchars(file_get_contents("papers/note/css/21css/resources/case01/index.html")));
+	echo str_replace("\t", "&nbsp;&nbsp;", htmlspecialchars(file_get_contents("papers/note/css/21css/resources/case01/test.html")));
 ?>
 	</pre>
-	<a class="try_button" href="papers/note/css/21css/resources/case01/index.html" target="_blank">check the result</a>
+	<a class="try_button" href="papers/note/css/21css/resources/case01/test.html" target="_blank">check the result</a>
 	<div class="G-Clear"></div>
 </div>
 <p>style.css：</p>
@@ -18,16 +18,16 @@
 	</pre>
 	<div class="G-Clear"></div>
 </div>
-<p>在这个例子中，我们的index.html中并没有mydiv这个类样式，而在style.css中却有mydiv的定义，我们通过&lt;link href="style.css" rel="stylesheet" /&gt;来引用style.css文件。</p>
+<p>在这个例子中，我们的test.html中并没有mydiv这个类样式，而在style.css中却有mydiv的定义，我们通过&lt;link href="style.css" rel="stylesheet" /&gt;来引用style.css文件。</p>
 <p>其实css是很强大的，我们来做一个二级菜单看看：</p>
-<p>index.html：</p>
+<p>test.html：</p>
 <div class="code_div">
 	<pre>
 <?php
-	echo str_replace("\t", "&nbsp;&nbsp;", htmlspecialchars(file_get_contents("papers/note/css/21css/resources/case02/index.html")));
+	echo str_replace("\t", "&nbsp;&nbsp;", htmlspecialchars(file_get_contents("papers/note/css/21css/resources/case02/test.html")));
 ?>
 	</pre>
-	<a class="try_button" href="papers/note/css/21css/resources/case02/index.html" target="_blank">check the result</a>
+	<a class="try_button" href="papers/note/css/21css/resources/case02/test.html" target="_blank">check the result</a>
 	<div class="G-Clear"></div>
 </div>
 <p>style.css：</p>

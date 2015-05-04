@@ -3,10 +3,10 @@
 <div class="code_div">
 	<pre>
 <?php
-	echo str_replace("\t", "&nbsp;&nbsp;", htmlspecialchars(file_get_contents("papers/note/css/27css/resources/case01/index.html")));
+	echo str_replace("\t", "&nbsp;&nbsp;", htmlspecialchars(file_get_contents("papers/note/css/27css/resources/case01/test.html")));
 ?>
 	</pre>
-	<a class="try_button" href="papers/note/css/27css/resources/case01/index.html" target="_blank">check the result</a>
+	<a class="try_button" href="papers/note/css/27css/resources/case01/test.html" target="_blank">check the result</a>
 	<div class="G-Clear"></div>
 </div>
 <p>css：</p>
@@ -26,10 +26,10 @@
 <div class="code_div">
 	<pre>
 <?php
-	echo str_replace("\t", "&nbsp;&nbsp;", htmlspecialchars(file_get_contents("papers/note/css/27css/resources/case02/index.html")));
+	echo str_replace("\t", "&nbsp;&nbsp;", htmlspecialchars(file_get_contents("papers/note/css/27css/resources/case02/test.html")));
 ?>
 	</pre>
-	<a class="try_button" href="papers/note/css/27css/resources/case02/index.html" target="_blank">check the result</a>
+	<a class="try_button" href="papers/note/css/27css/resources/case02/test.html" target="_blank">check the result</a>
 	<div class="G-Clear"></div>
 </div>
 <p>css：</p>
@@ -48,10 +48,10 @@
 <div class="code_div">
 	<pre>
 <?php
-	echo str_replace("\t", "&nbsp;&nbsp;", htmlspecialchars(file_get_contents("papers/note/css/27css/resources/case03/index.html")));
+	echo str_replace("\t", "&nbsp;&nbsp;", htmlspecialchars(file_get_contents("papers/note/css/27css/resources/case03/test.html")));
 ?>
 	</pre>
-	<a class="try_button" href="papers/note/css/27css/resources/case03/index.html" target="_blank">check the result</a>
+	<a class="try_button" href="papers/note/css/27css/resources/case03/test.html" target="_blank">check the result</a>
 	<div class="G-Clear"></div>
 </div>
 <p>css：</p>
@@ -69,10 +69,10 @@
 <div class="code_div">
 	<pre>
 <?php
-	echo str_replace("\t", "&nbsp;&nbsp;", htmlspecialchars(file_get_contents("papers/note/css/27css/resources/case04/index.html")));
+	echo str_replace("\t", "&nbsp;&nbsp;", htmlspecialchars(file_get_contents("papers/note/css/27css/resources/case04/test.html")));
 ?>
 	</pre>
-	<a class="try_button" href="papers/note/css/27css/resources/case04/index.html" target="_blank">check the result</a>
+	<a class="try_button" href="papers/note/css/27css/resources/case04/test.html" target="_blank">check the result</a>
 	<div class="G-Clear"></div>
 </div>
 <p>css：</p>

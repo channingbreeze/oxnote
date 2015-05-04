@@ -3,10 +3,10 @@
 <div class="code_div">
 	<pre>
 <?php
-	echo str_replace("\t", "&nbsp;&nbsp;", htmlspecialchars(file_get_contents("papers/note/css/23css/resources/case01/index.html")));
+	echo str_replace("\t", "&nbsp;&nbsp;", htmlspecialchars(file_get_contents("papers/note/css/23css/resources/case01/test.html")));
 ?>
 	</pre>
-	<a class="try_button" href="papers/note/css/23css/resources/case01/index.html" target="_blank">check the result</a>
+	<a class="try_button" href="papers/note/css/23css/resources/case01/test.html" target="_blank">check the result</a>
 	<div class="G-Clear"></div>
 </div>
 <p>css：</p>
@@ -24,10 +24,10 @@
 <div class="code_div">
 	<pre>
 <?php
-	echo str_replace("\t", "&nbsp;&nbsp;", htmlspecialchars(file_get_contents("papers/note/css/23css/resources/case02/index.html")));
+	echo str_replace("\t", "&nbsp;&nbsp;", htmlspecialchars(file_get_contents("papers/note/css/23css/resources/case02/test.html")));
 ?>
 	</pre>
-	<a class="try_button" href="papers/note/css/23css/resources/case02/index.html" target="_blank">check the result</a>
+	<a class="try_button" href="papers/note/css/23css/resources/case02/test.html" target="_blank">check the result</a>
 	<div class="G-Clear"></div>
 </div>
 <p>css：</p>
@@ -45,10 +45,10 @@
 <div class="code_div">
 	<pre>
 <?php
-	echo str_replace("\t", "&nbsp;&nbsp;", htmlspecialchars(file_get_contents("papers/note/css/23css/resources/case03/index.html")));
+	echo str_replace("\t", "&nbsp;&nbsp;", htmlspecialchars(file_get_contents("papers/note/css/23css/resources/case03/test.html")));
 ?>
 	</pre>
-	<a class="try_button" href="papers/note/css/23css/resources/case03/index.html" target="_blank">check the result</a>
+	<a class="try_button" href="papers/note/css/23css/resources/case03/test.html" target="_blank">check the result</a>
 	<div class="G-Clear"></div>
 </div>
 <p>css：</p>
@@ -65,10 +65,10 @@
 <div class="code_div">
 	<pre>
 <?php
-	echo str_replace("\t", "&nbsp;&nbsp;", htmlspecialchars(file_get_contents("papers/note/css/23css/resources/case04/index.html")));
+	echo str_replace("\t", "&nbsp;&nbsp;", htmlspecialchars(file_get_contents("papers/note/css/23css/resources/case04/test.html")));
 ?>
 	</pre>
-	<a class="try_button" href="papers/note/css/23css/resources/case04/index.html" target="_blank">check the result</a>
+	<a class="try_button" href="papers/note/css/23css/resources/case04/test.html" target="_blank">check the result</a>
 	<div class="G-Clear"></div>
 </div>
 <p>竟然不用写css和font-face啥的，因为css在有字库的网站上，是通过js下载到本地的，这就是云字库的意思啦，不过下载需要时间，过程有点慢，效果就是这样，大家看着办吧！</p>
