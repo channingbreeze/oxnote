@@ -24,12 +24,18 @@
 			<div class="type_info">超文本预处理器（PHP）是一种通用开源脚本语言，利于学习，使用广泛，主要适用于Web开发领域</div>
 			<a class="type_button" href="notedetail-php-9.html">阅读笔记</a>
 		</li>
-		<!--<li>
+		<li>
 			<img src="images/css.jpg" />
 			<div class="type_title">层叠样式表</div>
 			<div class="type_info">层叠样式表（CSS）是能够真正做到网页表现与内容分离的一种样式设计语言，是目前基于文本展示最优秀的表现设计语言</div>
 			<a class="type_button" href="notedetail-css-21.html">阅读笔记</a>
-		</li>-->
+		</li>
+		<!-- <li>
+			<img src="images/javascript.jpg" />
+			<div class="type_title">浏览器脚本语言</div>
+			<div class="type_info">JavaScript是一种Web应用开发脚本语言，常用来为网页添加动态酷炫效果，现在也能用于搭建后台服务</div>
+			<a class="type_button" href="notedetail-javascript-36.html">阅读笔记</a>
+		</li> -->
 	</ul>
  	<div class="skills_div block_div">
 	<span class="title_span">实战经验</span>

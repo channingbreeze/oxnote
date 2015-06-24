@@ -1,0 +1,9 @@
+document.write("我是一只小猫<br/>");
+document.write("我喜欢吃鱼<br/>");
+document.write("我喜欢抓老鼠<br/>");
+document.write("我眼睛晚上会发光<br/>");
+document.write("<br/>");
+document.write("我是一只小狗<br/>");
+document.write("我喜欢吃骨头<br/>");
+document.write("我喜欢欺负猫<br/>");
+document.write("我鼻子特别灵<br/>");
