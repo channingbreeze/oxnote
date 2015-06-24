@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<head>
+<meta charset="utf-8" />
+<title>正则</title>
+</head>
+<body>
+	<ul>
+		<li reg=".*the.*|.*The.*">
+			<div>包含the或者The的字符串：</div>
+			<input type="text" />
+			<button>check</button>
+			<div>reg=.*the.*|.*The.*</div>
+			<br/>
+		</li>
+		<li reg="^http://\w+\.\w+\.\w+$">
+			<div>网址（以http://开头，并且包含两个.，.不能在结尾或者http://后面，两个.不能相连）：</div>
+			<input type="text" />
+			<button>check</button>
+			<div>reg=^http://\w+\.\w+\.\w+$</div>
+			<br/>
+		</li>
+		<li reg="^\d{4}-(0[1-9]|1[0-2])-(0[1-9]|[1-2]\d|3[0-1])$">
+			<div>日期，严格按照yyyy-MM-dd格式：</div>
+			<input type="text" />
+			<button>check</button>
+			<div>reg=^\d{4}-(0[1-9]|1[0-2])-(0[1-9]|[1-2]\d|3[0-1])$</div>
+			<br/>
+		</li>
+	</ul>
+	<script src="script.js"></script>
+</body>
