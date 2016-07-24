@@ -12,7 +12,7 @@ document.getElementById("btn").onclick = function() {
 */
 document.getElementById("btn").onclick = function() {
 	var str = document.getElementById("str").value;
-	var reg = /^(T|t?:)he(\d)\2\2\2$/gi;
+	var reg = /^(?:T|t)he(\d)\1\1\1$/gi;
 	var res = reg.exec(str);
 	console.log(res);
 	if(res) {

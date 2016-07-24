@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<head>
+<meta charset="utf-8" />
+<title>正则</title>
+</head>
+<body>
+	<h1>前后查找</h1>
+	<ul>
+		<li reg="Windows(?=95|98|NT|2000)">
+			<div>找到后面紧跟95或98或NT或2000的Windows：</div>
+			<input type="text" />
+			<button>check</button>
+			<div>reg=Windows(?=95|98|NT|2000)</div>
+			<br/>
+		</li>
+		<li reg="Windows(?!95|98|NT|2000)">
+			<div>找到后面不紧跟95或98或NT或2000的Windows：</div>
+			<input type="text" />
+			<button>check</button>
+			<div>reg=Windows(?!95|98|NT|2000)</div>
+			<br/>
+		</li>
+		<li reg="2000(?<=Word|Excel|PowerPoint)">
+			<div>找到前面紧跟Word或Excel或PowerPoint的2000：</div>
+			<input type="text" />
+			<button>check</button>
+			<div>reg=2000(?&lt;=Word|Excel|PowerPoint)</div>
+			<br/>
+		</li>
+	</ul>
+	<script src="script.js"></script>
+</body>
